@@ -21,3 +21,20 @@
 ```
 
 Test results will be saved to `bandwidth_test_results.md`.
+
+## Code Improvement
+
+- For a more accurate evaluation, you can traverse all links. Here, we assume the four NetFPGA nodes have symmetric performance and use a partial connection test to save time.
+
+- To auto-start the rkd daemon, refer to the following code (with minor issues).
+
+  ````sh
+  # Start RKD if enabled
+  if [ "$RKD_ENABLE" -eq 1 ]; then
+      RKD_PID=$(sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no netfpga@nf$M0.usc.edu "rkd & echo \$!")
+      echo "RKD started with PID: $RKD_PID"
+      sleep 2
+  fi
+  ````
+
+  
