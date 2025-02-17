@@ -111,5 +111,11 @@ Members: Yijie Zhou, Jiahe Wu, Haoyang Zhang, Bohan Fang
 
 4. **Draw a high-level design of the user_data_path.v and ids.v Verilog files. The figure should depict the  communication between the components.**
 
-   ![Q4](./img/Q4.png)
+   user_data_path.v
+
+   ![Q4_1](./img/Q4_1.png)
+
+   ids.v
+
+   ![Q4_2](./img/Q4_2.png)
 
