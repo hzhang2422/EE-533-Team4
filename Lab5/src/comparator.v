@@ -7,17 +7,64 @@
 // \   \   \/     Version : 10.1
 //  \   \         Application : sch2verilog
 //  /   /         Filename : comparator.vf
-// /___/   /\     Timestamp : 01/31/2025 11:12:18
+// /___/   /\     Timestamp : 01/31/2025 19:36:58
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family virtex2p -w "C:/Documents and Settings/student/lab3_sch/comparator.sch" comparator.vf
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family virtex2p -w C:/yzhou477/lab3_beta/comparator.sch comparator.vf
 //Design Name: comparator
 //Device: virtex2p
 //Purpose:
 //    This verilog netlist is translated from an ECS schematic.It can be 
 //    synthesized and simulated, but it should not be modified. 
 //
+`timescale 1ns / 1ps
+
+module AND7_MXILINX_comparator(I0, 
+                               I1, 
+                               I2, 
+                               I3, 
+                               I4, 
+                               I5, 
+                               I6, 
+                               O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+   output O;
+   
+   wire I36;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   AND4 I_36_69 (.I0(I3), 
+                 .I1(I4), 
+                 .I2(I5), 
+                 .I3(I6), 
+                 .O(I36));
+   AND4 I_36_85 (.I0(I0), 
+                 .I1(I1), 
+                 .I2(I2), 
+                 .I3(I36), 
+                 .O(O_DUMMY));
+   FMAP I_36_98 (.I1(I0), 
+                 .I2(I1), 
+                 .I3(I2), 
+                 .I4(I36), 
+                 .O(O_DUMMY));
+   // synthesis attribute RLOC of I_36_98 is "X0Y0"
+   FMAP I_36_110 (.I1(I3), 
+                  .I2(I4), 
+                  .I3(I5), 
+                  .I4(I6), 
+                  .O(I36));
+   // synthesis attribute RLOC of I_36_110 is "X0Y0"
+endmodule
 `timescale 1ns / 1ps
 
 module COMP8_MXILINX_comparator(A, 
@@ -79,53 +126,6 @@ module COMP8_MXILINX_comparator(A,
 endmodule
 `timescale 1ns / 1ps
 
-module AND7_MXILINX_comparator(I0, 
-                               I1, 
-                               I2, 
-                               I3, 
-                               I4, 
-                               I5, 
-                               I6, 
-                               O);
-
-    input I0;
-    input I1;
-    input I2;
-    input I3;
-    input I4;
-    input I5;
-    input I6;
-   output O;
-   
-   wire I36;
-   wire O_DUMMY;
-   
-   assign O = O_DUMMY;
-   AND4 I_36_69 (.I0(I3), 
-                 .I1(I4), 
-                 .I2(I5), 
-                 .I3(I6), 
-                 .O(I36));
-   AND4 I_36_85 (.I0(I0), 
-                 .I1(I1), 
-                 .I2(I2), 
-                 .I3(I36), 
-                 .O(O_DUMMY));
-   FMAP I_36_98 (.I1(I0), 
-                 .I2(I1), 
-                 .I3(I2), 
-                 .I4(I36), 
-                 .O(O_DUMMY));
-   // synthesis attribute RLOC of I_36_98 is "X0Y0"
-   FMAP I_36_110 (.I1(I3), 
-                  .I2(I4), 
-                  .I3(I5), 
-                  .I4(I6), 
-                  .O(I36));
-   // synthesis attribute RLOC of I_36_110 is "X0Y0"
-endmodule
-`timescale 1ns / 1ps
-
 module comparator(a, 
                   amask, 
                   b, 
@@ -137,76 +137,76 @@ module comparator(a,
    output match;
    
    wire XLXN_1;
-   wire XLXN_2;
-   wire XLXN_4;
    wire XLXN_5;
-   wire XLXN_6;
-   wire XLXN_7;
+   wire XLXN_12;
    wire XLXN_14;
-   wire XLXN_82;
-   wire XLXN_83;
-   wire XLXN_84;
-   wire XLXN_85;
-   wire XLXN_86;
-   wire XLXN_87;
-   wire XLXN_88;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_25;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_32;
+   wire XLXN_33;
+   wire XLXN_38;
    
    COMP8_MXILINX_comparator XLXI_1 (.A(a[55:48]), 
                                     .B(b[55:48]), 
                                     .EQ(XLXN_1));
-   // synthesis attribute HU_SET of XLXI_1 is "XLXI_1_6"
-   COMP8_MXILINX_comparator XLXI_2 (.A(a[47:40]), 
-                                    .B(b[47:40]), 
-                                    .EQ(XLXN_2));
-   // synthesis attribute HU_SET of XLXI_2 is "XLXI_2_3"
+   // synthesis attribute HU_SET of XLXI_1 is "XLXI_1_0"
+   COMP8_MXILINX_comparator XLXI_2 (.A(a[31:24]), 
+                                    .B(b[31:24]), 
+                                    .EQ(XLXN_20));
+   // synthesis attribute HU_SET of XLXI_2 is "XLXI_2_1"
    COMP8_MXILINX_comparator XLXI_3 (.A(a[39:32]), 
                                     .B(b[39:32]), 
-                                    .EQ(XLXN_4));
-   // synthesis attribute HU_SET of XLXI_3 is "XLXI_3_4"
-   COMP8_MXILINX_comparator XLXI_4 (.A(a[31:24]), 
-                                    .B(b[31:24]), 
+                                    .EQ(XLXN_19));
+   // synthesis attribute HU_SET of XLXI_3 is "XLXI_3_2"
+   COMP8_MXILINX_comparator XLXI_4 (.A(a[47:40]), 
+                                    .B(b[47:40]), 
                                     .EQ(XLXN_5));
-   // synthesis attribute HU_SET of XLXI_4 is "XLXI_4_5"
-   COMP8_MXILINX_comparator XLXI_5 (.A(a[23:16]), 
-                                    .B(b[23:16]), 
-                                    .EQ(XLXN_6));
-   // synthesis attribute HU_SET of XLXI_5 is "XLXI_5_1"
-   COMP8_MXILINX_comparator XLXI_6 (.A(a[15:8]), 
-                                    .B(b[15:8]), 
-                                    .EQ(XLXN_7));
-   // synthesis attribute HU_SET of XLXI_6 is "XLXI_6_7"
-   COMP8_MXILINX_comparator XLXI_7 (.A(a[7:0]), 
-                                    .B(b[7:0]), 
-                                    .EQ(XLXN_14));
-   // synthesis attribute HU_SET of XLXI_7 is "XLXI_7_0"
-   OR2B1 XLXI_8 (.I0(amask[6]), 
+   // synthesis attribute HU_SET of XLXI_4 is "XLXI_4_3"
+   OR2B1 XLXI_5 (.I0(amask[6]), 
                  .I1(XLXN_1), 
-                 .O(XLXN_83));
-   OR2B1 XLXI_9 (.I0(amask[5]), 
-                 .I1(XLXN_2), 
-                 .O(XLXN_85));
-   OR2B1 XLXI_10 (.I0(amask[4]), 
-                  .I1(XLXN_4), 
-                  .O(XLXN_86));
-   OR2B1 XLXI_11 (.I0(amask[3]), 
-                  .I1(XLXN_5), 
-                  .O(XLXN_88));
+                 .O(XLXN_25));
+   OR2B1 XLXI_6 (.I0(amask[5]), 
+                 .I1(XLXN_5), 
+                 .O(XLXN_27));
+   OR2B1 XLXI_7 (.I0(amask[4]), 
+                 .I1(XLXN_19), 
+                 .O(XLXN_32));
+   OR2B1 XLXI_8 (.I0(amask[3]), 
+                 .I1(XLXN_20), 
+                 .O(XLXN_38));
+   COMP8_MXILINX_comparator XLXI_9 (.A(a[23:16]), 
+                                    .B(b[23:16]), 
+                                    .EQ(XLXN_12));
+   // synthesis attribute HU_SET of XLXI_9 is "XLXI_9_4"
+   COMP8_MXILINX_comparator XLXI_10 (.A(a[7:0]), 
+                                     .B(b[7:0]), 
+                                     .EQ(XLXN_18));
+   // synthesis attribute HU_SET of XLXI_10 is "XLXI_10_5"
+   COMP8_MXILINX_comparator XLXI_11 (.A(a[15:8]), 
+                                     .B(b[15:8]), 
+                                     .EQ(XLXN_14));
+   // synthesis attribute HU_SET of XLXI_11 is "XLXI_11_6"
    OR2B1 XLXI_12 (.I0(amask[2]), 
-                  .I1(XLXN_6), 
-                  .O(XLXN_84));
+                  .I1(XLXN_12), 
+                  .O(XLXN_26));
    OR2B1 XLXI_13 (.I0(amask[1]), 
-                  .I1(XLXN_7), 
-                  .O(XLXN_82));
-   OR2B1 XLXI_14 (.I0(amask[0]), 
                   .I1(XLXN_14), 
-                  .O(XLXN_87));
-   AND7_MXILINX_comparator XLXI_35 (.I0(XLXN_88), 
-                                    .I1(XLXN_87), 
-                                    .I2(XLXN_86), 
-                                    .I3(XLXN_82), 
-                                    .I4(XLXN_85), 
-                                    .I5(XLXN_84), 
-                                    .I6(XLXN_83), 
+                  .O(XLXN_28));
+   OR2B1 XLXI_14 (.I0(amask[0]), 
+                  .I1(XLXN_18), 
+                  .O(XLXN_33));
+   AND7_MXILINX_comparator XLXI_22 (.I0(XLXN_38), 
+                                    .I1(XLXN_33), 
+                                    .I2(XLXN_32), 
+                                    .I3(XLXN_28), 
+                                    .I4(XLXN_27), 
+                                    .I5(XLXN_26), 
+                                    .I6(XLXN_25), 
                                     .O(match));
-   // synthesis attribute HU_SET of XLXI_35 is "XLXI_35_2"
+   // synthesis attribute HU_SET of XLXI_22 is "XLXI_22_7"
 endmodule

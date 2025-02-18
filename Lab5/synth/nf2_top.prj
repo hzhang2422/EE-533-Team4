@@ -6,12 +6,11 @@ verilog work ../src/detect7B.v
 verilog work ../src/comparator.v
 verilog work ../src/busmerge.v
 verilog work ../src/wordmatch.v
-verilog work ../src/passthrough_ids.v
 verilog work ../src/dropfifo.v
 verilog work ../src/ids.v
 verilog work ../src/reg9B.v
 verilog work ../src/user_data_path.v
-verilog work ../src/src_coregen/mem_9B.v
+verilog work ../src/src_coregen/dual9Bmem.v
 verilog work /root/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_queue_regs.v
 verilog work /root/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_queue.v
 verilog work /root/netfpga/lib/verilog/core/io_queues/cpu_dma_queue/src/cpu_dma_rx_queue.v
@@ -74,6 +73,7 @@ verilog work /root/netfpga/lib/verilog/core/user_data_path/udp_reg_master/src/ud
 verilog work /root/netfpga/lib/verilog/core/io_queues/add_rm_hdr/src/add_hdr.v
 verilog work /root/netfpga/lib/verilog/core/io_queues/add_rm_hdr/src/add_rm_hdr.v
 verilog work /root/netfpga/lib/verilog/core/io_queues/add_rm_hdr/src/rm_hdr.v
+verilog work /root/netfpga/lib/verilog/core/strip_headers/keep_length/src/strip_headers.v
 verilog work /root/netfpga/lib/verilog/core/utils/src/fallthrough_small_fifo_v2.v
 verilog work /root/netfpga/lib/verilog/core/utils/src/small_fifo_v2.v
 verilog work /root/netfpga/lib/verilog/core/utils/src/rotate.v

@@ -10,24 +10,24 @@ Target Device  : xc2vp50
 Target Package : ff1152
 Target Speed   : -7
 Mapper Version : virtex2p -- $Revision: 1.46.12.2 $
-Mapped Date    : Sat Feb 15 15:52:45 2025
+Mapped Date    : Mon Feb 17 17:08:10 2025
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings: 2212
+Number of warnings: 2315
 Logic Utilization:
-  Number of Slice Flip Flops:        14,327 out of  47,232   30%
-  Number of 4 input LUTs:            21,259 out of  47,232   45%
+  Number of Slice Flip Flops:        14,671 out of  47,232   31%
+  Number of 4 input LUTs:            21,885 out of  47,232   46%
 Logic Distribution:
-  Number of occupied Slices:         14,709 out of  23,616   62%
-    Number of Slices containing only related logic:  14,709 out of  14,709 100%
-    Number of Slices containing unrelated logic:          0 out of  14,709   0%
+  Number of occupied Slices:         15,147 out of  23,616   64%
+    Number of Slices containing only related logic:  15,147 out of  15,147 100%
+    Number of Slices containing unrelated logic:          0 out of  15,147   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:      22,478 out of  47,232   47%
-    Number used as logic:            18,319
-    Number used as a route-thru:      1,219
-    Number used for Dual Port RAMs:   1,820
+  Total Number of 4 input LUTs:      23,135 out of  47,232   48%
+    Number used as logic:            18,801
+    Number used as a route-thru:      1,250
+    Number used for Dual Port RAMs:   1,964
       (Two LUTs used per Dual Port RAM)
     Number used for 32x1 RAMs:          384
       (Two LUTs used per 32x1 RAM)
@@ -35,13 +35,14 @@ Logic Distribution:
     Number used as Shift registers:     576
   Number of bonded IOBs:                356 out of     692   51%
     IOB Flip Flops:                     651
-  Number of RAMB16s:                    106 out of     232   45%
+  Number of RAMB16s:                    108 out of     232   46%
   Number of BUFGMUXs:                     8 out of      16   50%
   Number of DCMs:                         6 out of       8   75%
 
-Peak Memory Usage:  1696 MB
-Total REAL time to MAP completion:  4 mins 21 secs 
-Total CPU time to MAP completion:   2 mins 55 secs 
+  Number of RPM macros:           25
+Peak Memory Usage:  1728 MB
+Total REAL time to MAP completion:  2 mins 31 secs 
+Total CPU time to MAP completion:   1 mins 41 secs 
 
 Table of Contents
 -----------------
@@ -3740,6 +3741,204 @@ WARNING:LIT:243 - Logical network
 WARNING:LIT:243 - Logical network
    nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_wr_addr_reg
    /rd_data_b(9) has no load.
+WARNING:LIT:243 - Logical network nf2_core/user_data_path/ids/input_fifo/full
+   has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue1/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue2/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue3/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue6/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue4/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue5/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue7/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue8/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue11/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue9/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue10/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue12/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue13/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue16/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue14/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue15/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue17/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue18/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue21/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue19/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue20/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue22/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue23/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue26/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue24/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue25/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue27/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue28/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue31/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue29/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue30/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue32/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue33/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue36/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue34/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue35/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue37/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue38/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue41/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue39/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue40/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue42/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue43/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue46/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue44/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue45/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue47/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue48/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue51/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue49/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue50/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue52/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue53/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue56/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue54/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue55/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue57/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue58/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue61/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue59/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue60/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue62/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue63/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue66/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue64/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue65/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue67/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue68/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue69/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue70/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue71/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue72/SPO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(48) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(49) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(50) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(51) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(52) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(53) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(54) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(55) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(56) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(57) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(58) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(59) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(60) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(61) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(62) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(63) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(64) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(65) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(66) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(67) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(68) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(69) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(70) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/matcher/XLXI_3/q(71) has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/drop_fifo/XLXI_9/CEO has no load.
+WARNING:LIT:243 - Logical network
+   nf2_core/user_data_path/ids/drop_fifo/XLXI_10/CEO has no load.
 WARNING:LIT:243 - Logical network
    nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_q_dma_rd_rdy has no load.
 WARNING:LIT:243 - Logical network
@@ -5293,6 +5492,14 @@ WARNING:MapLib:701 - Signal serial_TXP_0 connected to top level port
    serial_TXP_0 has been removed.
 WARNING:MapLib:701 - Signal serial_TXP_1 connected to top level port
    serial_TXP_1 has been removed.
+WARNING:LIT:175 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "BUFGMUX_CORE_CLK" (output signal=core_clk_int) has a mix of clock and
+   non-clock loads. Some of the non-clock loads are (maximum of 5 listed):
+   Pin CE of nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q0
+   Pin CE of nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q1
+   Pin CE of nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q2
+   Pin CE of nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q3
+   Pin CE of nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q4
 WARNING:Pack:504 - The I/O component rgmii_0_txd(0) has conflicting SLEW
    property values.  The symbol rgmii_0_txd(0) has property value FAST.  The
    symbol rgmii_0_io/drive_rgmii_txd0 has property value SLOW.  The system will
@@ -5389,6 +5596,10 @@ WARNING:Pack:504 - The I/O component rgmii_3_tx_ctl has conflicting SLEW
    property values.  The symbol rgmii_3_tx_ctl has property value FAST.  The
    symbol rgmii_3_io/drive_rgmii_tx_ctl has property value SLOW.  The system
    will use the property value attached to symbol rgmii_3_tx_ctl.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   nf2_core/user_data_path/ids/in_fifo_rd_en is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
 WARNING:PhysDesignRules:1060 - Dangling pins on
    block:<nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx
    _fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr
@@ -5482,6 +5693,10 @@ WARNING:PhysDesignRules:1060 - Dangling pins on
    rator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x36.ram.A>:<RAMB16_RAMB16A>. 
    The block is configured to use input parity pins. There are dangling output
    parity pins.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B10.A>:<RAMB16_RAMB16A>.
+    The block is configured to use input parity pins. There are dangling output
+   parity pins.
 WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
    block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_wor
    ds_in_q_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
@@ -5765,6 +5980,10 @@ WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
 WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
    block:<nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_rd_a
    ddr_reg/ram/Mram_ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:1060 - Dangling pins on
+   block:<nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B6.A>:<RAMB16_RAMB16A>. 
+   The block is configured to use input parity pins. There are dangling output
+   parity pins.
 WARNING:PhysDesignRules:1060 - Dangling pins on
    block:<nf2_core/user_data_path/output_port_lookup/ip_arp/cam_lut_sm/Mram_lut1
    .A>:<RAMB16_RAMB16A>.  The block is configured to use input parity pins.
@@ -6080,10 +6299,10 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 497 block(s) removed
- 343 block(s) optimized away
- 515 signal(s) removed
-1332 Block(s) redundant
+ 526 block(s) removed
+ 353 block(s) optimized away
+ 546 signal(s) removed
+1369 Block(s) redundant
 
 Section 5 - Removed Logic
 -------------------------
@@ -8293,6 +8512,72 @@ eg/write_data_b(0)1" (ROM) removed.
   The signal
 "nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full_thresh_r
 eg/write_data_b(0)" is sourceless and has been removed.
+The signal "nf2_core/user_data_path/ids/input_fifo/fifo/N0" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(48)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(49)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(50)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(51)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(52)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(53)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(54)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(55)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(56)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(57)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(58)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(59)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(60)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(61)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(62)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(63)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(64)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(65)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(66)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(67)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(68)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(69)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(70)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_3/q(71)" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/dummy" is
+sourceless and has been removed.
+The signal "nf2_core/user_data_path/ids/drop_fifo/XLXN_37" is sourceless and has
+been removed.
+The signal "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/CEO" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/TC" is sourceless and
+has been removed.
+ Sourceless block "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_36_31" (AND)
+removed.
+The signal "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/CEO" is sourceless and
+has been removed.
+The signal "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/TC" is sourceless and
+has been removed.
+ Sourceless block "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_36_33" (AND)
+removed.
 The signal
 "nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2
 /U0/grf.rf/gcx.clkx/rd_pntr_gc<0>" is sourceless and has been removed.
@@ -9178,6 +9463,60 @@ removed.
 Unused block
 "nf2_core/mac_groups[3].nf2_mac_grp/tx_queue/tx_fifo_64.gmac_tx_fifo/VCC" (ONE)
 removed.
+Unused block "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_36_29" (AND)
+removed.
+Unused block "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_36_1" (AND)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q0" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q1" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q10" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q11" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q12" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q13" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q14" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q15" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q2" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q3" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q4" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q5" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q6" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q7" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q8" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_1/I_Q9" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_6/I_Q0" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_6/I_Q1" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_6/I_Q2" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_6/I_Q3" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_6/I_Q4" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_6/I_Q5" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_6/I_Q6" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_6/I_Q7" (FF)
+removed.
+Unused block "nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/XST_GND" (ZERO)
+removed.
 Unused block
 "nf2_core/user_data_path/output_port_lookup/dest_ip_filter/dest_ip_cam/BU2/XST_G
 ND" (ZERO) removed.
@@ -9612,6 +9951,20 @@ GND 		nf2_core/unused_reg_core_256kb_0[5]..unused_reg_core_256kb_0_x/XST_GND
 VCC 		nf2_core/unused_reg_core_256kb_0[5]..unused_reg_core_256kb_0_x/XST_VCC
 GND 		nf2_core/unused_reg_core_4mb_0/XST_GND
 VCC 		nf2_core/unused_reg_core_4mb_0/XST_VCC
+GND 		nf2_core/user_data_path/ids/XST_GND
+VCC 		nf2_core/user_data_path/ids/XST_VCC
+VCC 		nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_36_12
+VCC 		nf2_core/user_data_path/ids/drop_fifo/XLXI_15
+GND 		nf2_core/user_data_path/ids/drop_fifo/XLXI_31/GND
+VCC 		nf2_core/user_data_path/ids/drop_fifo/XLXI_31/VCC
+VCC 		nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_36_16
+GND 		nf2_core/user_data_path/ids/input_fifo/fifo/XST_GND
+GND 		nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/XST_GND
+VCC 		nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/XST_VCC
+GND 		nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/XST_GND
+VCC 		nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/XST_VCC
+GND 		nf2_core/user_data_path/ids/module_regs/XST_GND
+VCC 		nf2_core/user_data_path/ids/module_regs/XST_VCC
 GND 		nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/XST_GND
 GND 		nf2_core/user_data_path/input_arbiter/in_arb_queues[1].in_arb_fifo/XST_GND
 GND 		nf2_core/user_data_path/input_arbiter/in_arb_queues[2].in_arb_fifo/XST_GND
@@ -9953,14 +10306,6 @@ VCC
 .gmac_tx_fifo/BU2/XST_VCC
 GND 		nf2_core/user_data_path/output_queues/store_pkt/XST_GND
 VCC 		nf2_core/user_data_path/output_queues/store_pkt/XST_VCC
-GND
-		nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/XST_GND
-VCC
-		nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/XST_VCC
-GND
-		nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/XST_GND
-VCC
-		nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/XST_VCC
 MUXCY
 		nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_overhead_by
 tes_removed_reg/Madd_curr_plus_new_a_cy(0)
@@ -10261,12 +10606,6 @@ INV 		nf2_core/user_data_path/input_arbiter/in_rdy_71_INV_0
 INV 		nf2_core/user_data_path/input_arbiter/in_rdy_51_INV_0
 INV 		nf2_core/user_data_path/input_arbiter/in_rdy_31_INV_0
 INV 		nf2_core/user_data_path/input_arbiter/in_rdy_11_INV_0
-LUT1
-		nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/Mcompar_a
-ddr_good_cy(0)_rt
-LUT1
-		nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/Mcompar_a
-ddr_good_cmp_ge0000_cy(0)_rt
 INV
 		nf2_core/user_data_path/output_port_lookup/input_fifo/fifo/Mcount_wr_ptr_xor(0
 )11_INV_0
@@ -11114,6 +11453,43 @@ eg/wr_update_b_inv1_INV_0
 INV
 		nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_words_left_
 reg/wr_update_a_inv1_INV_0
+INV 		nf2_core/user_data_path/ids/input_fifo/fifo/Mcount_wr_ptr_xor(0)11_INV_0
+INV 		nf2_core/user_data_path/ids/input_fifo/fifo/Mcount_rd_ptr_xor(0)11_INV_0
+INV 		nf2_core/user_data_path/ids/input_fifo/fifo/Mcount_depth_xor(0)11_INV_0
+LUT1 		nf2_core/user_data_path/ids/module_regs/reg_ack_out_and0000_wg_cy(0)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(1)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(2)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(3)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(4)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(5)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(6)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(7)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(8)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(9)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(10)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(11)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(12)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(13)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(14)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(15)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(16)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(17)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(18)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(19)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(20)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(21)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(22)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(23)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(24)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(25)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(26)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(27)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(28)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(29)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_cy(30)_rt
+LUT1 		nf2_core/user_data_path/ids/Madd_matches_next_addsub0000_xor(31)_rt
+INV 		nf2_core/user_data_path/ids/reset_inv1_INV_0
+INV 		nf2_core/user_data_path/ids/in_rdy1_INV_0
 INV
 		nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/tx_queue_en1_INV_0
 INV
@@ -13725,6 +14101,8 @@ d_reg/wr_update_b_or00001
 LUT4
 		nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/num_pkts_stored
 _reg/wr_update_b_or00001
+XOR2 		nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q0/I_36_32
+XOR2 		nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q0/I_36_32
 MUXCY
 		nf2_core/cpu_queues[0].cpu_dma_queue_i/cpu_dma_rx_queue/cpu_fifos64.rx_fifo/BU
 2/U0/grf.rf/gl0.wr/gwas.gpf.wrpf/Madd_diff_pntr_pad_add0000_cy<0>
@@ -14409,6 +14787,31 @@ Section 6 - IOB Properties
 
 Section 7 - RPMs
 ----------------
+nf2_core/user_data_path/ids/drop_fifo/XLXI_10/XLXI_10_I_Q0_1
+nf2_core/user_data_path/ids/drop_fifo/XLXI_10/XLXI_10_I_Q1_2
+nf2_core/user_data_path/ids/drop_fifo/XLXI_10/XLXI_10_I_Q2_3
+nf2_core/user_data_path/ids/drop_fifo/XLXI_10/XLXI_10_I_Q3_4
+nf2_core/user_data_path/ids/drop_fifo/XLXI_10/XLXI_10_I_Q4_5
+nf2_core/user_data_path/ids/drop_fifo/XLXI_10/XLXI_10_I_Q5_6
+nf2_core/user_data_path/ids/drop_fifo/XLXI_10/XLXI_10_I_Q6_7
+nf2_core/user_data_path/ids/drop_fifo/XLXI_10/XLXI_10_I_Q7_8
+nf2_core/user_data_path/ids/drop_fifo/XLXI_9/XLXI_9_I_Q0_15
+nf2_core/user_data_path/ids/drop_fifo/XLXI_9/XLXI_9_I_Q1_16
+nf2_core/user_data_path/ids/drop_fifo/XLXI_9/XLXI_9_I_Q2_12
+nf2_core/user_data_path/ids/drop_fifo/XLXI_9/XLXI_9_I_Q3_13
+nf2_core/user_data_path/ids/drop_fifo/XLXI_9/XLXI_9_I_Q4_14
+nf2_core/user_data_path/ids/drop_fifo/XLXI_9/XLXI_9_I_Q5_11
+nf2_core/user_data_path/ids/drop_fifo/XLXI_9/XLXI_9_I_Q6_10
+nf2_core/user_data_path/ids/drop_fifo/XLXI_9/XLXI_9_I_Q7_9
+nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXI_1_XLXI_22_7
+nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXI_2_XLXI_22_7
+nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_3/XLXI_3_XLXI_22_7
+nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_4/XLXI_4_XLXI_22_7
+nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_4_XLXI_9_0
+nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXI_5_XLXI_22_7
+nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_6/XLXI_6_XLXI_22_7
+nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_7/XLXI_7_XLXI_22_7
+nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_8/XLXI_8_XLXI_22_7
 
 Section 8 - Guide Report
 ------------------------
@@ -19312,6 +19715,172 @@ PORTA_ATTR:4096X4
 WRITEMODEA:WRITE_FIRST
 INIT_A = 0
 SRVAL_A = 0
+PORTB_ATTR:512X36
+WRITEMODEB:WRITE_FIRST
+INIT_B = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16 "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B10":
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:512X36
+WRITEMODEA:NO_CHANGE
+INIT_A = 000000000
+SRVAL_A = 000000000
+PORTB_ATTR:512X36
+WRITEMODEB:WRITE_FIRST
+INIT_B = 000000000
+SRVAL_B = 000000000
+
+
+RAMB16 "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B6":
+INITP_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INITP_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_00 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_01 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_02 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_03 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_04 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_05 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_06 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_07 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_08 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_09 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_0f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_10 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_11 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_12 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_13 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_14 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_15 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_16 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_17 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_18 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_19 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_1f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_20 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_21 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_22 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_23 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_24 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_25 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_26 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_27 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_28 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_29 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_2f = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_30 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_31 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_32 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_33 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_34 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_35 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_36 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_37 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_38 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_39 = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3a = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3b = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3c = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3d = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3e = 0000000000000000000000000000000000000000000000000000000000000000
+INIT_3f = 0000000000000000000000000000000000000000000000000000000000000000
+PORTA_ATTR:512X36
+WRITEMODEA:NO_CHANGE
+INIT_A = 000000000
+SRVAL_A = 000000000
 PORTB_ATTR:512X36
 WRITEMODEB:WRITE_FIRST
 INIT_B = 000000000

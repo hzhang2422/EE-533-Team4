@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map K.39 on Sat Feb 15 15:57:02 2025
+// Written by: Map K.39 on Mon Feb 17 17:10:38 2025
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -6293,523 +6293,6 @@ TIMEGRP cpci_clk = BEL "nf2_core/user_data_path/udp_reg_master/core_reg_ack"
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/depth_1"
         BEL
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/depth_2"
-        BEL "nf2_core/user_data_path/passthrough_ids/ids_hwreg_0" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_1" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_2" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_3" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_4" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_5" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_6" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_7" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_8" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_9" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_10" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_11" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_12" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_13" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_14" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_15" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_16" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_17" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_18" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_19" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_20" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_21" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_22" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_23" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_24" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_25" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_26" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_27" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_28" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_29" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_30" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_31" BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_req_out" BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_ack_out" BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_rd_wr_L_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_src_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_src_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_31"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_req_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_31"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_31"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_ack_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_rd_wr_L_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_src_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_src_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_31"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_rd_wr_L_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_req_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_ack_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_src_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_src_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_31"
         BEL
         "nf2_core/user_data_path/output_port_lookup/preprocess_control/state_0"
         BEL
@@ -15128,7 +14611,841 @@ TIMEGRP cpci_clk = BEL "nf2_core/user_data_path/udp_reg_master/core_reg_ack"
         "nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full_thresh_reg/reg_ack"
         BEL
         "nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full_thresh_reg/wr_update_a_delayed"
+        BEL "nf2_core/user_data_path/ids/matches_0" BEL
+        "nf2_core/user_data_path/ids/matches_1" BEL
+        "nf2_core/user_data_path/ids/matches_2" BEL
+        "nf2_core/user_data_path/ids/matches_3" BEL
+        "nf2_core/user_data_path/ids/matches_4" BEL
+        "nf2_core/user_data_path/ids/matches_5" BEL
+        "nf2_core/user_data_path/ids/matches_6" BEL
+        "nf2_core/user_data_path/ids/matches_7" BEL
+        "nf2_core/user_data_path/ids/matches_8" BEL
+        "nf2_core/user_data_path/ids/matches_9" BEL
+        "nf2_core/user_data_path/ids/matches_10" BEL
+        "nf2_core/user_data_path/ids/matches_11" BEL
+        "nf2_core/user_data_path/ids/matches_12" BEL
+        "nf2_core/user_data_path/ids/matches_13" BEL
+        "nf2_core/user_data_path/ids/matches_14" BEL
+        "nf2_core/user_data_path/ids/matches_15" BEL
+        "nf2_core/user_data_path/ids/matches_16" BEL
+        "nf2_core/user_data_path/ids/matches_17" BEL
+        "nf2_core/user_data_path/ids/matches_18" BEL
+        "nf2_core/user_data_path/ids/matches_19" BEL
+        "nf2_core/user_data_path/ids/matches_20" BEL
+        "nf2_core/user_data_path/ids/matches_21" BEL
+        "nf2_core/user_data_path/ids/matches_22" BEL
+        "nf2_core/user_data_path/ids/matches_23" BEL
+        "nf2_core/user_data_path/ids/matches_24" BEL
+        "nf2_core/user_data_path/ids/matches_25" BEL
+        "nf2_core/user_data_path/ids/matches_26" BEL
+        "nf2_core/user_data_path/ids/matches_27" BEL
+        "nf2_core/user_data_path/ids/matches_28" BEL
+        "nf2_core/user_data_path/ids/matches_29" BEL
+        "nf2_core/user_data_path/ids/matches_30" BEL
+        "nf2_core/user_data_path/ids/matches_31" BEL
+        "nf2_core/user_data_path/ids/header_counter_0" BEL
+        "nf2_core/user_data_path/ids/header_counter_1" BEL
+        "nf2_core/user_data_path/ids/header_counter_2" BEL
+        "nf2_core/user_data_path/ids/begin_pkt" BEL
+        "nf2_core/user_data_path/ids/end_of_pkt" BEL
+        "nf2_core/user_data_path/ids/in_pkt_body" BEL
+        "nf2_core/user_data_path/ids/out_wr_int" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_0" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_1" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_2" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_3" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_4" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_5" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_6" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_7" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_0" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_1" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_2" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_3" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_4" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_5" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_6" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_7" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_8" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_9" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_10" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_11" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_12" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_13" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_14" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_15" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_16" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_17" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_18" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_19" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_20" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_21" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_22" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_23" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_24" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_25" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_26" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_27" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_28" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_29" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_30" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_31" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_32" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_33" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_34" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_35" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_36" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_37" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_38" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_39" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_40" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_41" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_42" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_43" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_44" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_45" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_46" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_47" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_48" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_49" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_50" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_51" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_52" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_53" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_54" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_55" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_56" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_57" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_58" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_59" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_60" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_61" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_62" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_63" BEL
+        "nf2_core/user_data_path/ids/state_FSM_FFd1" BEL
+        "nf2_core/user_data_path/ids/state_FSM_FFd2" BEL
+        "nf2_core/user_data_path/ids/input_fifo/empty" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_0" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_1" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_2" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_3" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_4" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_5" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_6" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_7" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_8" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_9" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_10" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_11" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_12" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_13" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_14" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_15" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_16" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_17" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_18" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_19" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_20" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_21" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_22" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_23" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_24" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_25" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_26" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_27" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_28" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_29" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_30" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_31" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_32" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_33" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_34" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_35" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_36" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_37" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_38" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_39" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_40" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_41" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_42" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_43" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_44" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_45" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_46" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_47" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_48" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_49" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_50" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_51" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_52" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_53" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_54" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_55" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_56" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_57" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_58" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_59" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_60" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_61" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_62" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_63" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_64" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_65" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_66" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_67" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_68" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_69" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_70" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_71" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/wr_ptr_0" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/wr_ptr_1" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/rd_ptr_0" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/rd_ptr_1" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/depth_0" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/depth_1" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/depth_2" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_req_out" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_ack_out" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_rd_wr_L_out" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_0" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_1" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_2" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_3" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_4" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_5" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_6" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_7" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_8" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_9" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_10" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_11" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_12" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_13" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_14" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_15" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_16" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_17" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_18" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_19" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_20" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_21" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_22" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_src_out_0" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_src_out_1" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_0" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_1" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_2" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_3" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_4" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_5" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_6" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_7" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_8" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_9" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_10" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_11" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_12" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_13" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_14" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_15" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_16" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_17" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_18" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_19" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_20" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_21" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_22" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_23" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_24" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_25" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_26" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_27" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_28" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_29" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_30" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_31" BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_0"
         BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_31"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_31"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_31"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_rd_wr_L_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_req_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_ack_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_src_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_src_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_31"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_rd_wr_L_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_req_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_ack_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_src_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_src_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_31"
+        BEL "nf2_core/user_data_path/ids/matcher/XLXI_6" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_7" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q0" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q1" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q2" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q3" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q4" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q5" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q6" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q7" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q8" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q9" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q10" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q11" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q12" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q13" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q14" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q15" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q0" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q1" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q2" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q3" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q4" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q5" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q6" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q7" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q8" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q9" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q10" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q11" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q12" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q13" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q14" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q15" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q0" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q1" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q2" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q3" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q4" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q5" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q6" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q7" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q8" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q9" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q10" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q11" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q12" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q13" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q14" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_8" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q8" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q9" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q10" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q11" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q12" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q13" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q14" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q8" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q9" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q10" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q11" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q12" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q13" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q14" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q8" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q9" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q10" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q11" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q12" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q13" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q14" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q8" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q9" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q10" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q11" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q12" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q13" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q14" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q0/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q1/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q2/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q3/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q4/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q5/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q6/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q7/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q0/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q1/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q2/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q3/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q4/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q5/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q6/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q7/I_36_35" BEL
         "nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/rx_pkt_dropped_bad_delta"
         BEL
         "nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/rx_pkt_stored_delta"
@@ -27378,6 +27695,14 @@ PIN
         = BEL
         "nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full_thresh_reg/ram/Mram_ram.B"
         PINNAME CLKB;
+PIN nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B6.A_pins<15> = BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B6.A" PINNAME CLKA;
+PIN nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B6.B_pins<15> = BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B6.B" PINNAME CLKB;
+PIN nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B10.A_pins<15> = BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B10.A" PINNAME CLKA;
+PIN nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B10.B_pins<15> = BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B10.B" PINNAME CLKB;
 PIN
         nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_dma_tx_queue/cpu_fifos64.tx_fifo/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v2.ram/dp36x18.ram.A_pins<15>
         = BEL
@@ -29604,523 +29929,6 @@ TIMEGRP core_clk_int = BEL
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/depth_1"
         BEL
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/depth_2"
-        BEL "nf2_core/user_data_path/passthrough_ids/ids_hwreg_0" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_1" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_2" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_3" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_4" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_5" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_6" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_7" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_8" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_9" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_10" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_11" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_12" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_13" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_14" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_15" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_16" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_17" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_18" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_19" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_20" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_21" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_22" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_23" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_24" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_25" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_26" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_27" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_28" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_29" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_30" BEL
-        "nf2_core/user_data_path/passthrough_ids/ids_hwreg_31" BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_req_out" BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_ack_out" BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_rd_wr_L_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_addr_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_src_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_src_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/reg_data_out_31"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_req_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_0_31"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_file_1_31"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_ack_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_rd_wr_L_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_addr_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_src_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_src_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_sw_regs/reg_data_out_31"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_rd_wr_L_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_req_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_ack_out"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_addr_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_src_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_src_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_0"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_1"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_2"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_3"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_4"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_5"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_6"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_7"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_8"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_9"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_10"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_11"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_12"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_13"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_14"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_15"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_16"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_17"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_18"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_19"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_20"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_21"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_22"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_23"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_24"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_25"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_26"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_27"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_28"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_29"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_30"
-        BEL
-        "nf2_core/user_data_path/passthrough_ids/module_regs/.generic_hw_regs/reg_data_out_31"
         BEL
         "nf2_core/user_data_path/output_port_lookup/preprocess_control/state_0"
         BEL
@@ -38643,7 +38451,845 @@ TIMEGRP core_clk_int = BEL
         "nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full_thresh_reg/ram/Mram_ram.A_pins<15>"
         PIN
         "nf2_core/user_data_path/output_queues/oq_regs/oq_reg_instances/oq_full_thresh_reg/ram/Mram_ram.B_pins<15>"
+        BEL "nf2_core/user_data_path/ids/matches_0" BEL
+        "nf2_core/user_data_path/ids/matches_1" BEL
+        "nf2_core/user_data_path/ids/matches_2" BEL
+        "nf2_core/user_data_path/ids/matches_3" BEL
+        "nf2_core/user_data_path/ids/matches_4" BEL
+        "nf2_core/user_data_path/ids/matches_5" BEL
+        "nf2_core/user_data_path/ids/matches_6" BEL
+        "nf2_core/user_data_path/ids/matches_7" BEL
+        "nf2_core/user_data_path/ids/matches_8" BEL
+        "nf2_core/user_data_path/ids/matches_9" BEL
+        "nf2_core/user_data_path/ids/matches_10" BEL
+        "nf2_core/user_data_path/ids/matches_11" BEL
+        "nf2_core/user_data_path/ids/matches_12" BEL
+        "nf2_core/user_data_path/ids/matches_13" BEL
+        "nf2_core/user_data_path/ids/matches_14" BEL
+        "nf2_core/user_data_path/ids/matches_15" BEL
+        "nf2_core/user_data_path/ids/matches_16" BEL
+        "nf2_core/user_data_path/ids/matches_17" BEL
+        "nf2_core/user_data_path/ids/matches_18" BEL
+        "nf2_core/user_data_path/ids/matches_19" BEL
+        "nf2_core/user_data_path/ids/matches_20" BEL
+        "nf2_core/user_data_path/ids/matches_21" BEL
+        "nf2_core/user_data_path/ids/matches_22" BEL
+        "nf2_core/user_data_path/ids/matches_23" BEL
+        "nf2_core/user_data_path/ids/matches_24" BEL
+        "nf2_core/user_data_path/ids/matches_25" BEL
+        "nf2_core/user_data_path/ids/matches_26" BEL
+        "nf2_core/user_data_path/ids/matches_27" BEL
+        "nf2_core/user_data_path/ids/matches_28" BEL
+        "nf2_core/user_data_path/ids/matches_29" BEL
+        "nf2_core/user_data_path/ids/matches_30" BEL
+        "nf2_core/user_data_path/ids/matches_31" BEL
+        "nf2_core/user_data_path/ids/header_counter_0" BEL
+        "nf2_core/user_data_path/ids/header_counter_1" BEL
+        "nf2_core/user_data_path/ids/header_counter_2" BEL
+        "nf2_core/user_data_path/ids/begin_pkt" BEL
+        "nf2_core/user_data_path/ids/end_of_pkt" BEL
+        "nf2_core/user_data_path/ids/in_pkt_body" BEL
+        "nf2_core/user_data_path/ids/out_wr_int" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_0" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_1" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_2" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_3" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_4" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_5" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_6" BEL
+        "nf2_core/user_data_path/ids/in_fifo_ctrl_7" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_0" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_1" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_2" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_3" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_4" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_5" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_6" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_7" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_8" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_9" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_10" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_11" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_12" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_13" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_14" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_15" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_16" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_17" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_18" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_19" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_20" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_21" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_22" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_23" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_24" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_25" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_26" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_27" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_28" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_29" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_30" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_31" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_32" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_33" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_34" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_35" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_36" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_37" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_38" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_39" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_40" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_41" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_42" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_43" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_44" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_45" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_46" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_47" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_48" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_49" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_50" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_51" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_52" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_53" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_54" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_55" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_56" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_57" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_58" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_59" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_60" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_61" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_62" BEL
+        "nf2_core/user_data_path/ids/in_fifo_data_63" BEL
+        "nf2_core/user_data_path/ids/state_FSM_FFd1" BEL
+        "nf2_core/user_data_path/ids/state_FSM_FFd2" BEL
+        "nf2_core/user_data_path/ids/input_fifo/empty" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_0" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_1" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_2" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_3" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_4" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_5" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_6" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_7" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_8" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_9" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_10" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_11" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_12" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_13" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_14" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_15" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_16" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_17" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_18" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_19" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_20" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_21" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_22" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_23" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_24" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_25" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_26" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_27" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_28" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_29" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_30" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_31" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_32" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_33" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_34" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_35" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_36" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_37" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_38" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_39" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_40" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_41" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_42" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_43" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_44" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_45" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_46" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_47" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_48" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_49" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_50" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_51" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_52" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_53" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_54" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_55" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_56" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_57" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_58" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_59" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_60" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_61" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_62" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_63" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_64" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_65" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_66" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_67" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_68" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_69" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_70" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/dout_71" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/wr_ptr_0" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/wr_ptr_1" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/rd_ptr_0" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/rd_ptr_1" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/depth_0" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/depth_1" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/depth_2" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_req_out" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_ack_out" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_rd_wr_L_out" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_0" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_1" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_2" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_3" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_4" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_5" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_6" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_7" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_8" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_9" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_10" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_11" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_12" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_13" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_14" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_15" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_16" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_17" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_18" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_19" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_20" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_21" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_addr_out_22" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_src_out_0" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_src_out_1" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_0" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_1" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_2" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_3" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_4" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_5" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_6" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_7" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_8" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_9" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_10" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_11" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_12" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_13" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_14" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_15" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_16" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_17" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_18" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_19" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_20" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_21" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_22" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_23" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_24" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_25" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_26" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_27" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_28" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_29" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_30" BEL
+        "nf2_core/user_data_path/ids/module_regs/reg_data_out_31" BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_0"
         BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_2_31"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_0_31"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_file_1_31"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_rd_wr_L_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_req_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_ack_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_addr_out_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_src_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_src_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_sw_regs/reg_data_out_31"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_rd_wr_L_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_req_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_ack_out"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_addr_out_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_src_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_src_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_0"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_1"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_2"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_3"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_4"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_5"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_6"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_7"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_8"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_9"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_10"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_11"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_12"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_13"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_14"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_15"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_16"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_17"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_18"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_19"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_20"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_21"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_22"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_23"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_24"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_25"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_26"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_27"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_28"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_29"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_30"
+        BEL
+        "nf2_core/user_data_path/ids/module_regs/.generic_hw_regs/reg_data_out_31"
+        BEL "nf2_core/user_data_path/ids/matcher/XLXI_6" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_7" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q0" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q1" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q2" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q3" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q4" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q5" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q6" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q7" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q8" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q9" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q10" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q11" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q12" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q13" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q14" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q15" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q0" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q1" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q2" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q3" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q4" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q5" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q6" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q7" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q8" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q9" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q10" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q11" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q12" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q13" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q14" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q15" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q0" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q1" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q2" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q3" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q4" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q5" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q6" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q7" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q8" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q9" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q10" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q11" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q12" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q13" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q14" BEL
+        "nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_8" PIN
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B6.A_pins<15>" PIN
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B6.B_pins<15>" PIN
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B10.A_pins<15>" PIN
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_31/B10.B_pins<15>" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_5/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q8" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q9" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q10" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q11" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q12" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q13" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q14" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_1/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q8" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q9" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q10" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q11" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q12" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q13" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q14" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_2/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q8" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q9" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q10" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q11" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q12" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q13" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q14" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_3/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q8" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q9" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q10" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q11" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q12" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q13" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q14" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_4/I_Q15" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q0" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q1" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q2" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q3" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q4" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q5" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q6" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_11/XLXI_6/I_Q7" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q0/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q1/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q2/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q3/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q4/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q5/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q6/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_9/I_Q7/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q0/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q1/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q2/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q3/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q4/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q5/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q6/I_36_35" BEL
+        "nf2_core/user_data_path/ids/drop_fifo/XLXI_10/I_Q7/I_36_35" BEL
         "nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/rx_pkt_dropped_bad_delta"
         BEL
         "nf2_core/cpu_queues[3].cpu_dma_queue_i/.cpu_dma_queue_regs/rx_pkt_stored_delta"
@@ -51522,7 +52168,150 @@ TIMEGRP core_clk_int = BEL
         "nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/fifo_mem/Mram_mem9/DP"
         BEL
         "nf2_core/nf2_dma/nf2_dma_sync/rx_async_fifo/fifo_mem/Mram_mem9/SP"
-        BEL
+        BEL "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue1/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue1/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue10/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue10/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue11/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue11/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue12/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue12/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue13/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue13/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue14/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue14/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue15/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue15/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue16/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue16/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue17/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue17/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue18/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue18/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue19/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue19/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue2/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue2/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue20/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue20/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue21/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue21/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue22/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue22/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue23/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue23/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue24/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue24/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue25/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue25/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue26/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue26/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue27/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue27/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue28/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue28/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue29/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue29/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue3/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue3/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue30/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue30/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue31/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue31/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue32/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue32/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue33/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue33/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue34/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue34/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue35/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue35/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue36/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue36/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue37/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue37/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue38/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue38/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue39/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue39/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue4/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue4/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue40/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue40/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue41/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue41/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue42/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue42/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue43/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue43/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue44/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue44/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue45/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue45/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue46/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue46/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue47/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue47/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue48/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue48/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue49/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue49/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue5/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue5/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue50/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue50/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue51/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue51/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue52/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue52/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue53/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue53/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue54/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue54/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue55/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue55/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue56/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue56/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue57/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue57/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue58/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue58/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue59/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue59/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue6/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue6/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue60/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue60/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue61/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue61/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue62/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue62/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue63/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue63/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue64/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue64/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue65/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue65/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue66/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue66/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue67/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue67/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue68/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue68/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue69/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue69/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue7/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue7/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue70/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue70/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue71/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue71/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue72/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue72/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue8/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue8/SP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue9/DP" BEL
+        "nf2_core/user_data_path/ids/input_fifo/fifo/Mram_queue9/SP" BEL
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/Mram_queue1/DP"
         BEL
         "nf2_core/user_data_path/input_arbiter/in_arb_queues[0].in_arb_fifo/Mram_queue1/SP"

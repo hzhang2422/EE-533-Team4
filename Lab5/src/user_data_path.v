@@ -360,14 +360,14 @@ module user_data_path
      .clk                  (clk),
      .reset                (reset));
 
-   passthrough_ids #(
+   ids #(
       .DATA_WIDTH(DATA_WIDTH),
       .CTRL_WIDTH(CTRL_WIDTH),
       .UDP_REG_SRC_WIDTH (UDP_REG_SRC_WIDTH)
       // .INPUT_ARBITER_STAGE_NUM(IN_ARB_STAGE_NUM),
       // .NUM_OUTPUT_QUEUES(NUM_OUTPUT_QUEUES),
       // .NUM_IQ_BITS(NUM_IQ_BITS)
-   ) passthrough_ids (
+   ) ids (
       // --- data path interface
       .out_data                          (oq_in_data),
       .out_ctrl                          (oq_in_ctrl),

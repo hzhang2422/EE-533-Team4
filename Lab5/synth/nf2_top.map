@@ -10,7 +10,7 @@ Target Device  : xc2vp50
 Target Package : ff1152
 Target Speed   : -7
 Mapper Version : virtex2p -- $Revision: 1.46.12.2 $
-Mapped Date    : Sat Feb 15 15:52:45 2025
+Mapped Date    : Mon Feb 17 17:08:10 2025
 
 Mapping design into LUTs...
 Running directed packing...
@@ -18,66 +18,66 @@ Running delay-based LUT packing...
 Running timing-driven packing...
 
 Phase 1.1
-Phase 1.1 (Checksum:32938adf) REAL time: 31 secs 
+Phase 1.1 (Checksum:3513ea81) REAL time: 16 secs 
 
 Phase 2.7
-Phase 2.7 (Checksum:32938adf) REAL time: 31 secs 
+Phase 2.7 (Checksum:3513ea81) REAL time: 16 secs 
 
 Phase 3.31
-Phase 3.31 (Checksum:32938adf) REAL time: 31 secs 
+Phase 3.31 (Checksum:3513ea81) REAL time: 16 secs 
 
 Phase 4.2
 
 .
-Phase 4.2 (Checksum:3299a748) REAL time: 35 secs 
+Phase 4.2 (Checksum:351a06ea) REAL time: 18 secs 
 
 Phase 5.30
-Phase 5.30 (Checksum:3299a748) REAL time: 35 secs 
+Phase 5.30 (Checksum:351a06ea) REAL time: 18 secs 
 
 Phase 6.3
-Phase 6.3 (Checksum:3299a748) REAL time: 36 secs 
+Phase 6.3 (Checksum:351a06ea) REAL time: 19 secs 
 
 Phase 7.5
-Phase 7.5 (Checksum:3299a748) REAL time: 36 secs 
+Phase 7.5 (Checksum:351a06ea) REAL time: 19 secs 
 
 Phase 8.4
-.............................
-........
-Phase 8.4 (Checksum:3299a748) REAL time: 54 secs 
+..........................
+............
+Phase 8.4 (Checksum:351a06ea) REAL time: 28 secs 
 
 Phase 9.28
-Phase 9.28 (Checksum:3299a748) REAL time: 55 secs 
+Phase 9.28 (Checksum:351a06ea) REAL time: 29 secs 
 
 Phase 10.8
-.........................
-....................
-......
-.......................................
+..........................
+................
+.....
+...............................
 ...............
 ...............
 ...............
-Phase 10.8 (Checksum:bfa560d8) REAL time: 1 mins 37 secs 
+Phase 10.8 (Checksum:c9120240) REAL time: 55 secs 
 
 Phase 11.29
-Phase 11.29 (Checksum:bfa560d8) REAL time: 1 mins 37 secs 
+Phase 11.29 (Checksum:c9120240) REAL time: 55 secs 
 
 Phase 12.5
-Phase 12.5 (Checksum:bfa560d8) REAL time: 1 mins 38 secs 
+Phase 12.5 (Checksum:c9120240) REAL time: 56 secs 
 
 Phase 13.18
-Phase 13.18 (Checksum:c01717bf) REAL time: 3 mins 34 secs 
+Phase 13.18 (Checksum:c9ab70c4) REAL time: 2 mins 3 secs 
 
 Phase 14.5
-Phase 14.5 (Checksum:c01717bf) REAL time: 3 mins 35 secs 
+Phase 14.5 (Checksum:c9ab70c4) REAL time: 2 mins 3 secs 
 
 Phase 15.27
-Phase 15.27 (Checksum:c0172007) REAL time: 3 mins 38 secs 
+Phase 15.27 (Checksum:c9ab7370) REAL time: 2 mins 6 secs 
 
 Phase 16.24
-Phase 16.24 (Checksum:c0172007) REAL time: 3 mins 41 secs 
+Phase 16.24 (Checksum:c9ab7370) REAL time: 2 mins 8 secs 
 
-REAL time consumed by placer: 3 mins 42 secs 
-CPU  time consumed by placer: 2 mins 28 secs 
+REAL time consumed by placer: 2 mins 8 secs 
+CPU  time consumed by placer: 1 mins 26 secs 
 Invoking physical synthesis ...
 
 Physical synthesis completed.
@@ -87,19 +87,19 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings: 2212
+Number of warnings: 2315
 Logic Utilization:
-  Number of Slice Flip Flops:        14,327 out of  47,232   30%
-  Number of 4 input LUTs:            21,259 out of  47,232   45%
+  Number of Slice Flip Flops:        14,671 out of  47,232   31%
+  Number of 4 input LUTs:            21,885 out of  47,232   46%
 Logic Distribution:
-  Number of occupied Slices:         14,709 out of  23,616   62%
-    Number of Slices containing only related logic:  14,709 out of  14,709 100%
-    Number of Slices containing unrelated logic:          0 out of  14,709   0%
+  Number of occupied Slices:         15,147 out of  23,616   64%
+    Number of Slices containing only related logic:  15,147 out of  15,147 100%
+    Number of Slices containing unrelated logic:          0 out of  15,147   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:      22,478 out of  47,232   47%
-    Number used as logic:            18,319
-    Number used as a route-thru:      1,219
-    Number used for Dual Port RAMs:   1,820
+  Total Number of 4 input LUTs:      23,135 out of  47,232   48%
+    Number used as logic:            18,801
+    Number used as a route-thru:      1,250
+    Number used for Dual Port RAMs:   1,964
       (Two LUTs used per Dual Port RAM)
     Number used for 32x1 RAMs:          384
       (Two LUTs used per 32x1 RAM)
@@ -107,13 +107,14 @@ Logic Distribution:
     Number used as Shift registers:     576
   Number of bonded IOBs:                356 out of     692   51%
     IOB Flip Flops:                     651
-  Number of RAMB16s:                    106 out of     232   45%
+  Number of RAMB16s:                    108 out of     232   46%
   Number of BUFGMUXs:                     8 out of      16   50%
   Number of DCMs:                         6 out of       8   75%
 
-Peak Memory Usage:  1696 MB
-Total REAL time to MAP completion:  4 mins 21 secs 
-Total CPU time to MAP completion:   2 mins 55 secs 
+  Number of RPM macros:           25
+Peak Memory Usage:  1728 MB
+Total REAL time to MAP completion:  2 mins 31 secs 
+Total CPU time to MAP completion:   1 mins 41 secs 
 
 Mapping completed.
 See MAP report file "nf2_top.mrp" for details.

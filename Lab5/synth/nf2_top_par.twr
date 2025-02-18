@@ -62,7 +62,7 @@ Timing constraint: TS_rgmii_falling_to_rising = MAXDELAY FROM TIMEGRP
 
  20 paths analyzed, 20 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Maximum delay is   1.799ns.
+ Maximum delay is   1.820ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -70,7 +70,7 @@ Timing constraint: TS_rx_clk = PERIOD TIMEGRP "rx_clock" 8 ns HIGH 50%;
 
  64432 paths analyzed, 2096 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum period is   7.885ns.
+ Minimum period is   7.954ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -79,24 +79,216 @@ Timing constraint: TS_tx_clk_gmii = PERIOD TIMEGRP "tx_clock_gmii" 8 ns HIGH
 
  42244 paths analyzed, 1228 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum period is   7.773ns.
+ Minimum period is   7.942ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: TS_cpci_clk = PERIOD TIMEGRP "cpci_clk" 16 ns HIGH 50%;
 
- 7796 paths analyzed, 785 endpoints analyzed, 0 failing endpoints
+ 7770 paths analyzed, 785 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum period is  14.627ns.
+ Minimum period is  11.151ns.
 --------------------------------------------------------------------------------
 
 ================================================================================
 Timing constraint: TS_core_clk_int = PERIOD TIMEGRP "core_clk_int" 8 ns HIGH 
 50%;
 
- 1318995 paths analyzed, 34133 endpoints analyzed, 0 failing endpoints
- 0 timing errors detected. (0 setup errors, 0 hold errors)
- Minimum period is   7.991ns.
+ 1323440 paths analyzed, 35253 endpoints analyzed, 4 failing endpoints
+ 4 timing errors detected. (2 setup errors, 2 hold errors)
+ Minimum period is  10.189ns.
+--------------------------------------------------------------------------------
+Slack:                  -2.189ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q15 (FF)
+  Destination:          nf2_core/user_data_path/ids/matcher/XLXI_7 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      4.895ns (Levels of Logic = 8)
+  Clock Path Skew:      -5.294ns (1.891 - 7.185)
+  Source Clock:         nf2_core/user_data_path/ids/in_fifo_rd_en rising at 0.000ns
+  Destination Clock:    core_clk_int rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q15 to nf2_core/user_data_path/ids/matcher/XLXI_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X70Y100.YQ     Tcko                  0.370   nf2_core/user_data_path/ids/matcher/XLXN_36(95)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q15
+    SLICE_X72Y107.F3     net (fanout=3)        0.657   nf2_core/user_data_path/ids/matcher/XLXN_36(95)
+    SLICE_X72Y107.X      Tilo                  0.254   nf2_core/user_data_path/ids/pattern_high(16)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXI_4/I_36_32/bound
+    SLICE_X73Y105.G2     net (fanout=1)        0.289   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXI_4/I_36_32/I_36_32_1
+    SLICE_X73Y105.Y      Tilo                  0.275   nf2_core/user_data_path/ids/pattern_high(17)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXI_4/I_36_50
+    SLICE_X73Y105.F4     net (fanout=1)        0.057   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXN_5
+    SLICE_X73Y105.X      Tilo                  0.254   nf2_core/user_data_path/ids/pattern_high(17)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXI_6
+    SLICE_X75Y99.G3      net (fanout=1)        0.378   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXN_27
+    SLICE_X75Y99.Y       Tilo                  0.275   nf2_core/user_data_path/ids/matcher/XLXN_36(96)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXI_22/I_36_69
+    SLICE_X75Y99.F4      net (fanout=1)        0.057   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXI_22/I36
+    SLICE_X75Y99.X       Tilo                  0.254   nf2_core/user_data_path/ids/matcher/XLXN_36(96)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_2/XLXI_22/I_36_85
+    SLICE_X74Y101.G3     net (fanout=1)        0.188   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXN_11
+    SLICE_X74Y101.Y      Tilo                  0.275   nf2_core/user_data_path/ids/matcher/XLXN_36(102)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/I_36_112
+    SLICE_X75Y100.G2     net (fanout=1)        0.097   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/S0
+    SLICE_X75Y100.Y      Tilo                  0.275   nf2_core/user_data_path/ids/matcher_match
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/I_36_94
+    SLICE_X75Y100.F3     net (fanout=1)        0.037   nf2_core/user_data_path/ids/matcher/XLXN_27
+    SLICE_X75Y100.X      Tilo                  0.254   nf2_core/user_data_path/ids/matcher_match
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_5
+    SLICE_X75Y100.CE     net (fanout=2)        0.386   nf2_core/user_data_path/ids/matcher/XLXN_12
+    SLICE_X75Y100.CLK    Tceck                 0.263   nf2_core/user_data_path/ids/matcher_match
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_7
+    -------------------------------------------------  ---------------------------
+    Total                                      4.895ns (2.749ns logic, 2.146ns route)
+                                                       (56.2% logic, 43.8% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.185ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q10 (FF)
+  Destination:          nf2_core/user_data_path/ids/matcher/XLXI_7 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      4.965ns (Levels of Logic = 8)
+  Clock Path Skew:      -5.220ns (1.891 - 7.111)
+  Source Clock:         nf2_core/user_data_path/ids/in_fifo_rd_en rising at 0.000ns
+  Destination Clock:    core_clk_int rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q10 to nf2_core/user_data_path/ids/matcher/XLXI_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X71Y104.YQ     Tcko                  0.370   nf2_core/user_data_path/ids/matcher/XLXN_36(72)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q10
+    SLICE_X73Y98.F2      net (fanout=5)        0.553   nf2_core/user_data_path/ids/matcher/XLXN_36(74)
+    SLICE_X73Y98.X       Tilo                  0.254   nf2_core/user_data_path/ids/pattern_low(1)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXI_1/I_36_41/bound
+    SLICE_X70Y102.G2     net (fanout=1)        0.452   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXI_1/I_36_41/I_36_41_1
+    SLICE_X70Y102.Y      Tilo                  0.275   nf2_core/user_data_path/ids/pattern_low(11)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXI_1/I_36_50
+    SLICE_X70Y102.F4     net (fanout=1)        0.057   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXN_1
+    SLICE_X70Y102.X      Tilo                  0.254   nf2_core/user_data_path/ids/pattern_low(11)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXI_5
+    SLICE_X74Y105.G4     net (fanout=1)        0.430   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXN_25
+    SLICE_X74Y105.Y      Tilo                  0.275   nf2_core/user_data_path/ids/matcher/XLXN_36(101)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXI_22/I_36_69
+    SLICE_X74Y105.F3     net (fanout=1)        0.037   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXI_22/I36
+    SLICE_X74Y105.X      Tilo                  0.254   nf2_core/user_data_path/ids/matcher/XLXN_36(101)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_5/XLXI_22/I_36_85
+    SLICE_X74Y101.F4     net (fanout=1)        0.261   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXN_6
+    SLICE_X74Y101.X      Tilo                  0.254   nf2_core/user_data_path/ids/matcher/XLXN_36(102)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/I_36_95
+    SLICE_X75Y100.G3     net (fanout=1)        0.024   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/S1
+    SLICE_X75Y100.Y      Tilo                  0.275   nf2_core/user_data_path/ids/matcher_match
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/I_36_94
+    SLICE_X75Y100.F3     net (fanout=1)        0.037   nf2_core/user_data_path/ids/matcher/XLXN_27
+    SLICE_X75Y100.X      Tilo                  0.254   nf2_core/user_data_path/ids/matcher_match
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_5
+    SLICE_X75Y100.CE     net (fanout=2)        0.386   nf2_core/user_data_path/ids/matcher/XLXN_12
+    SLICE_X75Y100.CLK    Tceck                 0.263   nf2_core/user_data_path/ids/matcher_match
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_7
+    -------------------------------------------------  ---------------------------
+    Total                                      4.965ns (2.728ns logic, 2.237ns route)
+                                                       (54.9% logic, 45.1% route)
+
+--------------------------------------------------------------------------------
+Slack:                  -2.135ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q4 (FF)
+  Destination:          nf2_core/user_data_path/ids/matcher/XLXI_7 (FF)
+  Requirement:          8.000ns
+  Data Path Delay:      5.568ns (Levels of Logic = 8)
+  Clock Path Skew:      -4.567ns (1.891 - 6.458)
+  Source Clock:         nf2_core/user_data_path/ids/in_fifo_rd_en rising at 0.000ns
+  Destination Clock:    core_clk_int rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q4 to nf2_core/user_data_path/ids/matcher/XLXI_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X74Y95.XQ      Tcko                  0.370   nf2_core/user_data_path/ids/matcher/XLXN_36(100)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_2/I_Q4
+    SLICE_X68Y98.F2      net (fanout=2)        0.743   nf2_core/user_data_path/ids/matcher/XLXN_36(100)
+    SLICE_X68Y98.X       Tilo                  0.254   nf2_core/user_data_path/ids/pattern_high(19)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXI_4/I_36_32/free/bound
+    SLICE_X77Y98.G3      net (fanout=1)        0.554   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXI_4/I_36_32/free/I_36_32_2
+    SLICE_X77Y98.Y       Tilo                  0.275   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXN_27
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXI_4/I_36_50
+    SLICE_X77Y98.F3      net (fanout=1)        0.037   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXN_5
+    SLICE_X77Y98.X       Tilo                  0.254   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXN_27
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXI_6
+    SLICE_X72Y101.G4     net (fanout=1)        0.623   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXN_27
+    SLICE_X72Y101.Y      Tilo                  0.275   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXN_12
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXI_22/I_36_69
+    SLICE_X72Y101.F3     net (fanout=1)        0.037   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXI_22/I36
+    SLICE_X72Y101.X      Tilo                  0.254   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXN_12
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_1/XLXI_22/I_36_85
+    SLICE_X74Y101.G1     net (fanout=1)        0.305   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXN_12
+    SLICE_X74Y101.Y      Tilo                  0.275   nf2_core/user_data_path/ids/matcher/XLXN_36(102)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/I_36_112
+    SLICE_X75Y100.G2     net (fanout=1)        0.097   nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/S0
+    SLICE_X75Y100.Y      Tilo                  0.275   nf2_core/user_data_path/ids/matcher_match
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_4/XLXI_9/I_36_94
+    SLICE_X75Y100.F3     net (fanout=1)        0.037   nf2_core/user_data_path/ids/matcher/XLXN_27
+    SLICE_X75Y100.X      Tilo                  0.254   nf2_core/user_data_path/ids/matcher_match
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_5
+    SLICE_X75Y100.CE     net (fanout=2)        0.386   nf2_core/user_data_path/ids/matcher/XLXN_12
+    SLICE_X75Y100.CLK    Tceck                 0.263   nf2_core/user_data_path/ids/matcher_match
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_7
+    -------------------------------------------------  ---------------------------
+    Total                                      5.568ns (2.749ns logic, 2.819ns route)
+                                                       (49.4% logic, 50.6% route)
+
+--------------------------------------------------------------------------------
+Hold Violations: TS_core_clk_int = PERIOD TIMEGRP "core_clk_int" 8 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Hold Violation:         -0.323ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               nf2_core/user_data_path/ids/in_fifo_data_5 (FF)
+  Destination:          nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q5 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      4.215ns (Levels of Logic = 0)
+  Positive Clock Path Skew: 4.538ns (6.460 - 1.922)
+  Source Clock:         core_clk_int rising at 0.000ns
+  Destination Clock:    nf2_core/user_data_path/ids/in_fifo_rd_en rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: nf2_core/user_data_path/ids/in_fifo_data_5 to nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X76Y101.YQ     Tcko                  0.296   nf2_core/user_data_path/ids/in_fifo_data(4)
+                                                       nf2_core/user_data_path/ids/in_fifo_data_5
+    SLICE_X75Y107.BY     net (fanout=3)        3.898   nf2_core/user_data_path/ids/in_fifo_data(5)
+    SLICE_X75Y107.CLK    Tckdi       (-Th)    -0.021   nf2_core/user_data_path/ids/matcher/XLXN_36(68)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_4/I_Q5
+    -------------------------------------------------  ---------------------------
+    Total                                      4.215ns (0.317ns logic, 3.898ns route)
+                                                       (7.5% logic, 92.5% route)
+--------------------------------------------------------------------------------
+Hold Violation:         -0.101ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               nf2_core/user_data_path/ids/in_fifo_data_18 (FF)
+  Destination:          nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      4.345ns (Levels of Logic = 0)
+  Positive Clock Path Skew: 4.446ns (6.452 - 2.006)
+  Source Clock:         core_clk_int rising at 0.000ns
+  Destination Clock:    nf2_core/user_data_path/ids/in_fifo_rd_en rising at 8.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: nf2_core/user_data_path/ids/in_fifo_data_18 to nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X89Y98.YQ      Tcko                  0.296   nf2_core/user_data_path/ids/in_fifo_data(18)
+                                                       nf2_core/user_data_path/ids/in_fifo_data_18
+    SLICE_X74Y96.BY      net (fanout=5)        4.028   nf2_core/user_data_path/ids/in_fifo_data(18)
+    SLICE_X74Y96.CLK     Tckdi       (-Th)    -0.021   nf2_core/user_data_path/ids/matcher/XLXN_36(82)
+                                                       nf2_core/user_data_path/ids/matcher/XLXI_3/XLXI_3/I_Q2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.345ns (0.317ns logic, 4.028ns route)
+                                                       (7.3% logic, 92.7% route)
 --------------------------------------------------------------------------------
 
 ================================================================================
@@ -230,7 +422,7 @@ Timing constraint: TIMEGRP "SRAM2_DATA" OFFSET = OUT 4 ns AFTER COMP
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+1 constraint not met.
 
 
 Data Sheet report:
@@ -244,23 +436,23 @@ Source        | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 --------------+------------+------------+------------------+--------+
 sram1_data(0) |    1.724(R)|   -0.828(R)|core_clk_int      |   0.000|
 sram1_data(1) |    1.716(R)|   -0.819(R)|core_clk_int      |   0.000|
-sram1_data(2) |    1.712(R)|   -0.817(R)|core_clk_int      |   0.000|
-sram1_data(3) |    1.707(R)|   -0.812(R)|core_clk_int      |   0.000|
+sram1_data(2) |    1.713(R)|   -0.817(R)|core_clk_int      |   0.000|
+sram1_data(3) |    1.708(R)|   -0.812(R)|core_clk_int      |   0.000|
 sram1_data(4) |    1.708(R)|   -0.811(R)|core_clk_int      |   0.000|
 sram1_data(5) |    1.704(R)|   -0.807(R)|core_clk_int      |   0.000|
 sram1_data(6) |    1.699(R)|   -0.802(R)|core_clk_int      |   0.000|
 sram1_data(7) |    1.694(R)|   -0.798(R)|core_clk_int      |   0.000|
 sram1_data(8) |    1.689(R)|   -0.793(R)|core_clk_int      |   0.000|
 sram1_data(9) |    1.693(R)|   -0.797(R)|core_clk_int      |   0.000|
-sram1_data(10)|    1.709(R)|   -0.814(R)|core_clk_int      |   0.000|
-sram1_data(11)|    1.715(R)|   -0.820(R)|core_clk_int      |   0.000|
+sram1_data(10)|    1.710(R)|   -0.814(R)|core_clk_int      |   0.000|
+sram1_data(11)|    1.716(R)|   -0.820(R)|core_clk_int      |   0.000|
 sram1_data(12)|    1.725(R)|   -0.831(R)|core_clk_int      |   0.000|
 sram1_data(13)|    1.726(R)|   -0.830(R)|core_clk_int      |   0.000|
 sram1_data(14)|    1.702(R)|   -0.805(R)|core_clk_int      |   0.000|
 sram1_data(15)|    1.707(R)|   -0.810(R)|core_clk_int      |   0.000|
 sram1_data(16)|    1.731(R)|   -0.837(R)|core_clk_int      |   0.000|
 sram1_data(17)|    1.729(R)|   -0.833(R)|core_clk_int      |   0.000|
-sram1_data(18)|    1.603(R)|   -0.686(R)|core_clk_int      |   0.000|
+sram1_data(18)|    1.604(R)|   -0.686(R)|core_clk_int      |   0.000|
 sram1_data(19)|    1.567(R)|   -0.644(R)|core_clk_int      |   0.000|
 sram1_data(20)|    1.570(R)|   -0.647(R)|core_clk_int      |   0.000|
 sram1_data(21)|    1.604(R)|   -0.686(R)|core_clk_int      |   0.000|
@@ -269,9 +461,9 @@ sram1_data(23)|    1.617(R)|   -0.700(R)|core_clk_int      |   0.000|
 sram1_data(24)|    1.621(R)|   -0.704(R)|core_clk_int      |   0.000|
 sram1_data(25)|    1.626(R)|   -0.711(R)|core_clk_int      |   0.000|
 sram1_data(26)|    1.630(R)|   -0.715(R)|core_clk_int      |   0.000|
-sram1_data(27)|    1.567(R)|   -0.645(R)|core_clk_int      |   0.000|
-sram1_data(28)|    1.577(R)|   -0.655(R)|core_clk_int      |   0.000|
-sram1_data(29)|    1.563(R)|   -0.641(R)|core_clk_int      |   0.000|
+sram1_data(27)|    1.568(R)|   -0.645(R)|core_clk_int      |   0.000|
+sram1_data(28)|    1.578(R)|   -0.655(R)|core_clk_int      |   0.000|
+sram1_data(29)|    1.564(R)|   -0.641(R)|core_clk_int      |   0.000|
 sram1_data(30)|    1.564(R)|   -0.638(R)|core_clk_int      |   0.000|
 sram1_data(31)|    1.569(R)|   -0.643(R)|core_clk_int      |   0.000|
 sram1_data(32)|    1.577(R)|   -0.654(R)|core_clk_int      |   0.000|
@@ -285,8 +477,8 @@ sram2_data(3) |    1.613(R)|   -0.696(R)|core_clk_int      |   0.000|
 sram2_data(4) |    1.616(R)|   -0.699(R)|core_clk_int      |   0.000|
 sram2_data(5) |    1.630(R)|   -0.712(R)|core_clk_int      |   0.000|
 sram2_data(6) |    1.623(R)|   -0.705(R)|core_clk_int      |   0.000|
-sram2_data(7) |    1.560(R)|   -0.634(R)|core_clk_int      |   0.000|
-sram2_data(8) |    1.551(R)|   -0.625(R)|core_clk_int      |   0.000|
+sram2_data(7) |    1.561(R)|   -0.634(R)|core_clk_int      |   0.000|
+sram2_data(8) |    1.552(R)|   -0.625(R)|core_clk_int      |   0.000|
 sram2_data(9) |    1.628(R)|   -0.714(R)|core_clk_int      |   0.000|
 sram2_data(10)|    1.597(R)|   -0.682(R)|core_clk_int      |   0.000|
 sram2_data(11)|    1.605(R)|   -0.690(R)|core_clk_int      |   0.000|
@@ -297,7 +489,7 @@ sram2_data(15)|    1.589(R)|   -0.673(R)|core_clk_int      |   0.000|
 sram2_data(16)|    1.592(R)|   -0.674(R)|core_clk_int      |   0.000|
 sram2_data(17)|    1.598(R)|   -0.680(R)|core_clk_int      |   0.000|
 sram2_data(18)|    1.678(R)|   -0.781(R)|core_clk_int      |   0.000|
-sram2_data(19)|    1.674(R)|   -0.777(R)|core_clk_int      |   0.000|
+sram2_data(19)|    1.675(R)|   -0.777(R)|core_clk_int      |   0.000|
 sram2_data(20)|    1.720(R)|   -0.824(R)|core_clk_int      |   0.000|
 sram2_data(21)|    1.705(R)|   -0.808(R)|core_clk_int      |   0.000|
 sram2_data(22)|    1.696(R)|   -0.799(R)|core_clk_int      |   0.000|
@@ -308,12 +500,12 @@ sram2_data(26)|    1.734(R)|   -0.840(R)|core_clk_int      |   0.000|
 sram2_data(27)|    1.688(R)|   -0.791(R)|core_clk_int      |   0.000|
 sram2_data(28)|    1.691(R)|   -0.793(R)|core_clk_int      |   0.000|
 sram2_data(29)|    1.700(R)|   -0.802(R)|core_clk_int      |   0.000|
-sram2_data(30)|    1.705(R)|   -0.808(R)|core_clk_int      |   0.000|
-sram2_data(31)|    1.679(R)|   -0.782(R)|core_clk_int      |   0.000|
-sram2_data(32)|    1.684(R)|   -0.787(R)|core_clk_int      |   0.000|
+sram2_data(30)|    1.706(R)|   -0.808(R)|core_clk_int      |   0.000|
+sram2_data(31)|    1.680(R)|   -0.782(R)|core_clk_int      |   0.000|
+sram2_data(32)|    1.685(R)|   -0.787(R)|core_clk_int      |   0.000|
 sram2_data(33)|    1.692(R)|   -0.794(R)|core_clk_int      |   0.000|
 sram2_data(34)|    1.697(R)|   -0.799(R)|core_clk_int      |   0.000|
-sram2_data(35)|    1.709(R)|   -0.812(R)|core_clk_int      |   0.000|
+sram2_data(35)|    1.710(R)|   -0.812(R)|core_clk_int      |   0.000|
 --------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock cpci_clk
@@ -422,78 +614,78 @@ dma_op_queue_id(2)   |    2.678(R)|   -1.048(R)|cpci_clk_int      |   0.000|
 dma_op_queue_id(3)   |    2.692(R)|   -1.063(R)|cpci_clk_int      |   0.000|
 dma_q_nearly_full_c2n|    2.676(R)|   -1.046(R)|cpci_clk_int      |   0.000|
 dma_vld_c2n          |    2.699(R)|   -1.065(R)|cpci_clk_int      |   0.000|
-sram1_data(0)        |   -0.962(R)|    1.555(R)|core_clk_int      |   0.000|
-sram1_data(1)        |   -0.970(R)|    1.564(R)|core_clk_int      |   0.000|
-sram1_data(2)        |   -0.974(R)|    1.566(R)|core_clk_int      |   0.000|
-sram1_data(3)        |   -0.979(R)|    1.571(R)|core_clk_int      |   0.000|
-sram1_data(4)        |   -0.978(R)|    1.572(R)|core_clk_int      |   0.000|
-sram1_data(5)        |   -0.982(R)|    1.576(R)|core_clk_int      |   0.000|
-sram1_data(6)        |   -0.987(R)|    1.581(R)|core_clk_int      |   0.000|
-sram1_data(7)        |   -0.992(R)|    1.585(R)|core_clk_int      |   0.000|
-sram1_data(8)        |   -0.997(R)|    1.590(R)|core_clk_int      |   0.000|
-sram1_data(9)        |   -0.993(R)|    1.586(R)|core_clk_int      |   0.000|
-sram1_data(10)       |   -0.977(R)|    1.569(R)|core_clk_int      |   0.000|
-sram1_data(11)       |   -0.971(R)|    1.563(R)|core_clk_int      |   0.000|
-sram1_data(12)       |   -0.961(R)|    1.552(R)|core_clk_int      |   0.000|
-sram1_data(13)       |   -0.960(R)|    1.553(R)|core_clk_int      |   0.000|
-sram1_data(14)       |   -0.984(R)|    1.578(R)|core_clk_int      |   0.000|
-sram1_data(15)       |   -0.979(R)|    1.573(R)|core_clk_int      |   0.000|
-sram1_data(16)       |   -0.955(R)|    1.546(R)|core_clk_int      |   0.000|
-sram1_data(17)       |   -0.957(R)|    1.550(R)|core_clk_int      |   0.000|
-sram1_data(18)       |   -1.083(R)|    1.697(R)|core_clk_int      |   0.000|
-sram1_data(19)       |   -1.119(R)|    1.739(R)|core_clk_int      |   0.000|
-sram1_data(20)       |   -1.116(R)|    1.736(R)|core_clk_int      |   0.000|
-sram1_data(21)       |   -1.082(R)|    1.697(R)|core_clk_int      |   0.000|
-sram1_data(22)       |   -1.080(R)|    1.695(R)|core_clk_int      |   0.000|
-sram1_data(23)       |   -1.069(R)|    1.683(R)|core_clk_int      |   0.000|
-sram1_data(24)       |   -1.065(R)|    1.679(R)|core_clk_int      |   0.000|
-sram1_data(25)       |   -1.060(R)|    1.672(R)|core_clk_int      |   0.000|
-sram1_data(26)       |   -1.056(R)|    1.668(R)|core_clk_int      |   0.000|
-sram1_data(27)       |   -1.119(R)|    1.738(R)|core_clk_int      |   0.000|
-sram1_data(28)       |   -1.109(R)|    1.728(R)|core_clk_int      |   0.000|
-sram1_data(29)       |   -1.123(R)|    1.742(R)|core_clk_int      |   0.000|
-sram1_data(30)       |   -1.122(R)|    1.745(R)|core_clk_int      |   0.000|
-sram1_data(31)       |   -1.117(R)|    1.740(R)|core_clk_int      |   0.000|
-sram1_data(32)       |   -1.109(R)|    1.729(R)|core_clk_int      |   0.000|
-sram1_data(33)       |   -1.107(R)|    1.727(R)|core_clk_int      |   0.000|
-sram1_data(34)       |   -1.117(R)|    1.740(R)|core_clk_int      |   0.000|
-sram1_data(35)       |   -1.112(R)|    1.735(R)|core_clk_int      |   0.000|
-sram2_data(0)        |   -1.066(R)|    1.679(R)|core_clk_int      |   0.000|
-sram2_data(1)        |   -1.086(R)|    1.700(R)|core_clk_int      |   0.000|
-sram2_data(2)        |   -1.095(R)|    1.709(R)|core_clk_int      |   0.000|
-sram2_data(3)        |   -1.073(R)|    1.687(R)|core_clk_int      |   0.000|
-sram2_data(4)        |   -1.070(R)|    1.684(R)|core_clk_int      |   0.000|
-sram2_data(5)        |   -1.056(R)|    1.671(R)|core_clk_int      |   0.000|
-sram2_data(6)        |   -1.063(R)|    1.678(R)|core_clk_int      |   0.000|
-sram2_data(7)        |   -1.126(R)|    1.749(R)|core_clk_int      |   0.000|
-sram2_data(8)        |   -1.135(R)|    1.758(R)|core_clk_int      |   0.000|
-sram2_data(9)        |   -1.058(R)|    1.669(R)|core_clk_int      |   0.000|
-sram2_data(10)       |   -1.089(R)|    1.701(R)|core_clk_int      |   0.000|
-sram2_data(11)       |   -1.081(R)|    1.693(R)|core_clk_int      |   0.000|
-sram2_data(12)       |   -1.070(R)|    1.683(R)|core_clk_int      |   0.000|
-sram2_data(13)       |   -1.072(R)|    1.686(R)|core_clk_int      |   0.000|
-sram2_data(14)       |   -1.101(R)|    1.714(R)|core_clk_int      |   0.000|
-sram2_data(15)       |   -1.097(R)|    1.710(R)|core_clk_int      |   0.000|
-sram2_data(16)       |   -1.094(R)|    1.709(R)|core_clk_int      |   0.000|
-sram2_data(17)       |   -1.088(R)|    1.703(R)|core_clk_int      |   0.000|
-sram2_data(18)       |   -1.008(R)|    1.602(R)|core_clk_int      |   0.000|
-sram2_data(19)       |   -1.012(R)|    1.606(R)|core_clk_int      |   0.000|
-sram2_data(20)       |   -0.966(R)|    1.559(R)|core_clk_int      |   0.000|
-sram2_data(21)       |   -0.981(R)|    1.575(R)|core_clk_int      |   0.000|
-sram2_data(22)       |   -0.990(R)|    1.584(R)|core_clk_int      |   0.000|
-sram2_data(23)       |   -0.993(R)|    1.586(R)|core_clk_int      |   0.000|
-sram2_data(24)       |   -1.002(R)|    1.595(R)|core_clk_int      |   0.000|
-sram2_data(25)       |   -1.002(R)|    1.595(R)|core_clk_int      |   0.000|
-sram2_data(26)       |   -0.952(R)|    1.543(R)|core_clk_int      |   0.000|
-sram2_data(27)       |   -0.998(R)|    1.592(R)|core_clk_int      |   0.000|
-sram2_data(28)       |   -0.995(R)|    1.590(R)|core_clk_int      |   0.000|
-sram2_data(29)       |   -0.986(R)|    1.581(R)|core_clk_int      |   0.000|
-sram2_data(30)       |   -0.981(R)|    1.575(R)|core_clk_int      |   0.000|
-sram2_data(31)       |   -1.007(R)|    1.601(R)|core_clk_int      |   0.000|
-sram2_data(32)       |   -1.002(R)|    1.596(R)|core_clk_int      |   0.000|
-sram2_data(33)       |   -0.994(R)|    1.589(R)|core_clk_int      |   0.000|
-sram2_data(34)       |   -0.989(R)|    1.584(R)|core_clk_int      |   0.000|
-sram2_data(35)       |   -0.977(R)|    1.571(R)|core_clk_int      |   0.000|
+sram1_data(0)        |   -0.963(R)|    1.556(R)|core_clk_int      |   0.000|
+sram1_data(1)        |   -0.971(R)|    1.565(R)|core_clk_int      |   0.000|
+sram1_data(2)        |   -0.974(R)|    1.567(R)|core_clk_int      |   0.000|
+sram1_data(3)        |   -0.979(R)|    1.572(R)|core_clk_int      |   0.000|
+sram1_data(4)        |   -0.979(R)|    1.573(R)|core_clk_int      |   0.000|
+sram1_data(5)        |   -0.983(R)|    1.577(R)|core_clk_int      |   0.000|
+sram1_data(6)        |   -0.988(R)|    1.582(R)|core_clk_int      |   0.000|
+sram1_data(7)        |   -0.993(R)|    1.586(R)|core_clk_int      |   0.000|
+sram1_data(8)        |   -0.998(R)|    1.591(R)|core_clk_int      |   0.000|
+sram1_data(9)        |   -0.994(R)|    1.587(R)|core_clk_int      |   0.000|
+sram1_data(10)       |   -0.977(R)|    1.570(R)|core_clk_int      |   0.000|
+sram1_data(11)       |   -0.971(R)|    1.564(R)|core_clk_int      |   0.000|
+sram1_data(12)       |   -0.962(R)|    1.553(R)|core_clk_int      |   0.000|
+sram1_data(13)       |   -0.961(R)|    1.554(R)|core_clk_int      |   0.000|
+sram1_data(14)       |   -0.985(R)|    1.579(R)|core_clk_int      |   0.000|
+sram1_data(15)       |   -0.980(R)|    1.574(R)|core_clk_int      |   0.000|
+sram1_data(16)       |   -0.956(R)|    1.547(R)|core_clk_int      |   0.000|
+sram1_data(17)       |   -0.958(R)|    1.551(R)|core_clk_int      |   0.000|
+sram1_data(18)       |   -1.083(R)|    1.698(R)|core_clk_int      |   0.000|
+sram1_data(19)       |   -1.120(R)|    1.740(R)|core_clk_int      |   0.000|
+sram1_data(20)       |   -1.117(R)|    1.737(R)|core_clk_int      |   0.000|
+sram1_data(21)       |   -1.083(R)|    1.698(R)|core_clk_int      |   0.000|
+sram1_data(22)       |   -1.081(R)|    1.696(R)|core_clk_int      |   0.000|
+sram1_data(23)       |   -1.070(R)|    1.684(R)|core_clk_int      |   0.000|
+sram1_data(24)       |   -1.066(R)|    1.680(R)|core_clk_int      |   0.000|
+sram1_data(25)       |   -1.061(R)|    1.673(R)|core_clk_int      |   0.000|
+sram1_data(26)       |   -1.057(R)|    1.669(R)|core_clk_int      |   0.000|
+sram1_data(27)       |   -1.119(R)|    1.739(R)|core_clk_int      |   0.000|
+sram1_data(28)       |   -1.109(R)|    1.729(R)|core_clk_int      |   0.000|
+sram1_data(29)       |   -1.123(R)|    1.743(R)|core_clk_int      |   0.000|
+sram1_data(30)       |   -1.123(R)|    1.746(R)|core_clk_int      |   0.000|
+sram1_data(31)       |   -1.118(R)|    1.741(R)|core_clk_int      |   0.000|
+sram1_data(32)       |   -1.110(R)|    1.730(R)|core_clk_int      |   0.000|
+sram1_data(33)       |   -1.108(R)|    1.728(R)|core_clk_int      |   0.000|
+sram1_data(34)       |   -1.118(R)|    1.741(R)|core_clk_int      |   0.000|
+sram1_data(35)       |   -1.113(R)|    1.736(R)|core_clk_int      |   0.000|
+sram2_data(0)        |   -1.067(R)|    1.680(R)|core_clk_int      |   0.000|
+sram2_data(1)        |   -1.087(R)|    1.701(R)|core_clk_int      |   0.000|
+sram2_data(2)        |   -1.096(R)|    1.710(R)|core_clk_int      |   0.000|
+sram2_data(3)        |   -1.074(R)|    1.688(R)|core_clk_int      |   0.000|
+sram2_data(4)        |   -1.071(R)|    1.685(R)|core_clk_int      |   0.000|
+sram2_data(5)        |   -1.057(R)|    1.672(R)|core_clk_int      |   0.000|
+sram2_data(6)        |   -1.064(R)|    1.679(R)|core_clk_int      |   0.000|
+sram2_data(7)        |   -1.126(R)|    1.750(R)|core_clk_int      |   0.000|
+sram2_data(8)        |   -1.135(R)|    1.759(R)|core_clk_int      |   0.000|
+sram2_data(9)        |   -1.059(R)|    1.670(R)|core_clk_int      |   0.000|
+sram2_data(10)       |   -1.090(R)|    1.702(R)|core_clk_int      |   0.000|
+sram2_data(11)       |   -1.082(R)|    1.694(R)|core_clk_int      |   0.000|
+sram2_data(12)       |   -1.071(R)|    1.684(R)|core_clk_int      |   0.000|
+sram2_data(13)       |   -1.073(R)|    1.687(R)|core_clk_int      |   0.000|
+sram2_data(14)       |   -1.102(R)|    1.715(R)|core_clk_int      |   0.000|
+sram2_data(15)       |   -1.098(R)|    1.711(R)|core_clk_int      |   0.000|
+sram2_data(16)       |   -1.095(R)|    1.710(R)|core_clk_int      |   0.000|
+sram2_data(17)       |   -1.089(R)|    1.704(R)|core_clk_int      |   0.000|
+sram2_data(18)       |   -1.009(R)|    1.603(R)|core_clk_int      |   0.000|
+sram2_data(19)       |   -1.012(R)|    1.607(R)|core_clk_int      |   0.000|
+sram2_data(20)       |   -0.967(R)|    1.560(R)|core_clk_int      |   0.000|
+sram2_data(21)       |   -0.982(R)|    1.576(R)|core_clk_int      |   0.000|
+sram2_data(22)       |   -0.991(R)|    1.585(R)|core_clk_int      |   0.000|
+sram2_data(23)       |   -0.994(R)|    1.587(R)|core_clk_int      |   0.000|
+sram2_data(24)       |   -1.003(R)|    1.596(R)|core_clk_int      |   0.000|
+sram2_data(25)       |   -1.003(R)|    1.596(R)|core_clk_int      |   0.000|
+sram2_data(26)       |   -0.953(R)|    1.544(R)|core_clk_int      |   0.000|
+sram2_data(27)       |   -0.999(R)|    1.593(R)|core_clk_int      |   0.000|
+sram2_data(28)       |   -0.996(R)|    1.591(R)|core_clk_int      |   0.000|
+sram2_data(29)       |   -0.987(R)|    1.582(R)|core_clk_int      |   0.000|
+sram2_data(30)       |   -0.981(R)|    1.576(R)|core_clk_int      |   0.000|
+sram2_data(31)       |   -1.007(R)|    1.602(R)|core_clk_int      |   0.000|
+sram2_data(32)       |   -1.002(R)|    1.597(R)|core_clk_int      |   0.000|
+sram2_data(33)       |   -0.995(R)|    1.590(R)|core_clk_int      |   0.000|
+sram2_data(34)       |   -0.990(R)|    1.585(R)|core_clk_int      |   0.000|
+sram2_data(35)       |   -0.977(R)|    1.572(R)|core_clk_int      |   0.000|
 ---------------------+------------+------------+------------------+--------+
 
 Clock core_clk to Pad
@@ -698,126 +890,126 @@ dma_op_code_ack(0)   |    4.605(R)|cpci_clk_int      |   0.000|
 dma_op_code_ack(1)   |    4.592(R)|cpci_clk_int      |   0.000|
 dma_q_nearly_full_n2c|    4.641(R)|cpci_clk_int      |   0.000|
 dma_vld_n2c          |    4.598(R)|cpci_clk_int      |   0.000|
-sram1_addr(0)        |    4.576(R)|core_clk_int      |   0.000|
-sram1_addr(1)        |    4.577(R)|core_clk_int      |   0.000|
-sram1_addr(2)        |    4.573(R)|core_clk_int      |   0.000|
-sram1_addr(3)        |    4.578(R)|core_clk_int      |   0.000|
-sram1_addr(4)        |    4.601(R)|core_clk_int      |   0.000|
-sram1_addr(5)        |    4.637(R)|core_clk_int      |   0.000|
-sram1_addr(6)        |    4.643(R)|core_clk_int      |   0.000|
-sram1_addr(7)        |    4.592(R)|core_clk_int      |   0.000|
-sram1_addr(8)        |    4.574(R)|core_clk_int      |   0.000|
-sram1_addr(9)        |    4.462(R)|core_clk_int      |   0.000|
-sram1_addr(10)       |    4.457(R)|core_clk_int      |   0.000|
-sram1_addr(11)       |    4.436(R)|core_clk_int      |   0.000|
-sram1_addr(12)       |    4.452(R)|core_clk_int      |   0.000|
-sram1_addr(13)       |    4.463(R)|core_clk_int      |   0.000|
-sram1_addr(14)       |    4.571(R)|core_clk_int      |   0.000|
-sram1_addr(15)       |    4.573(R)|core_clk_int      |   0.000|
-sram1_addr(16)       |    4.583(R)|core_clk_int      |   0.000|
-sram1_addr(17)       |    4.588(R)|core_clk_int      |   0.000|
-sram1_addr(18)       |    4.468(R)|core_clk_int      |   0.000|
-sram1_bw(0)          |    4.578(R)|core_clk_int      |   0.000|
-sram1_bw(1)          |    4.594(R)|core_clk_int      |   0.000|
-sram1_bw(2)          |    4.610(R)|core_clk_int      |   0.000|
-sram1_bw(3)          |    4.631(R)|core_clk_int      |   0.000|
-sram1_data(0)        |    4.460(R)|core_clk_int      |   0.000|
-sram1_data(1)        |    4.461(R)|core_clk_int      |   0.000|
-sram1_data(2)        |    4.435(R)|core_clk_int      |   0.000|
-sram1_data(3)        |    4.430(R)|core_clk_int      |   0.000|
-sram1_data(4)        |    4.453(R)|core_clk_int      |   0.000|
-sram1_data(5)        |    4.445(R)|core_clk_int      |   0.000|
-sram1_data(6)        |    4.440(R)|core_clk_int      |   0.000|
-sram1_data(7)        |    4.424(R)|core_clk_int      |   0.000|
-sram1_data(8)        |    4.419(R)|core_clk_int      |   0.000|
-sram1_data(9)        |    4.429(R)|core_clk_int      |   0.000|
-sram1_data(10)       |    4.432(R)|core_clk_int      |   0.000|
-sram1_data(11)       |    4.438(R)|core_clk_int      |   0.000|
-sram1_data(12)       |    4.439(R)|core_clk_int      |   0.000|
-sram1_data(13)       |    4.462(R)|core_clk_int      |   0.000|
-sram1_data(14)       |    4.443(R)|core_clk_int      |   0.000|
-sram1_data(15)       |    4.448(R)|core_clk_int      |   0.000|
-sram1_data(16)       |    4.445(R)|core_clk_int      |   0.000|
-sram1_data(17)       |    4.459(R)|core_clk_int      |   0.000|
-sram1_data(18)       |    4.598(R)|core_clk_int      |   0.000|
-sram1_data(19)       |    4.622(R)|core_clk_int      |   0.000|
-sram1_data(20)       |    4.625(R)|core_clk_int      |   0.000|
-sram1_data(21)       |    4.600(R)|core_clk_int      |   0.000|
-sram1_data(22)       |    4.602(R)|core_clk_int      |   0.000|
-sram1_data(23)       |    4.604(R)|core_clk_int      |   0.000|
-sram1_data(24)       |    4.608(R)|core_clk_int      |   0.000|
-sram1_data(25)       |    4.595(R)|core_clk_int      |   0.000|
-sram1_data(26)       |    4.599(R)|core_clk_int      |   0.000|
-sram1_data(27)       |    4.629(R)|core_clk_int      |   0.000|
-sram1_data(28)       |    4.639(R)|core_clk_int      |   0.000|
-sram1_data(29)       |    4.625(R)|core_clk_int      |   0.000|
-sram1_data(30)       |    4.674(R)|core_clk_int      |   0.000|
-sram1_data(31)       |    4.679(R)|core_clk_int      |   0.000|
-sram1_data(32)       |    4.636(R)|core_clk_int      |   0.000|
-sram1_data(33)       |    4.638(R)|core_clk_int      |   0.000|
-sram1_data(34)       |    4.677(R)|core_clk_int      |   0.000|
-sram1_data(35)       |    4.682(R)|core_clk_int      |   0.000|
-sram1_we             |    4.566(R)|core_clk_int      |   0.000|
-sram2_addr(0)        |    4.439(R)|core_clk_int      |   0.000|
-sram2_addr(1)        |    4.455(R)|core_clk_int      |   0.000|
-sram2_addr(2)        |    4.447(R)|core_clk_int      |   0.000|
-sram2_addr(3)        |    4.402(R)|core_clk_int      |   0.000|
-sram2_addr(4)        |    4.412(R)|core_clk_int      |   0.000|
-sram2_addr(5)        |    4.429(R)|core_clk_int      |   0.000|
-sram2_addr(6)        |    4.447(R)|core_clk_int      |   0.000|
-sram2_addr(7)        |    4.438(R)|core_clk_int      |   0.000|
-sram2_addr(8)        |    4.608(R)|core_clk_int      |   0.000|
-sram2_addr(9)        |    4.448(R)|core_clk_int      |   0.000|
-sram2_addr(10)       |    4.564(R)|core_clk_int      |   0.000|
-sram2_addr(11)       |    4.605(R)|core_clk_int      |   0.000|
-sram2_addr(12)       |    4.600(R)|core_clk_int      |   0.000|
-sram2_addr(13)       |    4.569(R)|core_clk_int      |   0.000|
-sram2_addr(14)       |    4.457(R)|core_clk_int      |   0.000|
-sram2_addr(15)       |    4.467(R)|core_clk_int      |   0.000|
-sram2_addr(16)       |    4.433(R)|core_clk_int      |   0.000|
-sram2_addr(17)       |    4.440(R)|core_clk_int      |   0.000|
-sram2_addr(18)       |    4.442(R)|core_clk_int      |   0.000|
-sram2_bw(0)          |    4.468(R)|core_clk_int      |   0.000|
-sram2_bw(1)          |    4.424(R)|core_clk_int      |   0.000|
-sram2_bw(2)          |    4.421(R)|core_clk_int      |   0.000|
-sram2_bw(3)          |    4.429(R)|core_clk_int      |   0.000|
-sram2_data(0)        |    4.596(R)|core_clk_int      |   0.000|
-sram2_data(1)        |    4.591(R)|core_clk_int      |   0.000|
-sram2_data(2)        |    4.582(R)|core_clk_int      |   0.000|
-sram2_data(3)        |    4.600(R)|core_clk_int      |   0.000|
-sram2_data(4)        |    4.603(R)|core_clk_int      |   0.000|
-sram2_data(5)        |    4.626(R)|core_clk_int      |   0.000|
-sram2_data(6)        |    4.619(R)|core_clk_int      |   0.000|
-sram2_data(7)        |    4.666(R)|core_clk_int      |   0.000|
-sram2_data(8)        |    4.657(R)|core_clk_int      |   0.000|
-sram2_data(9)        |    4.588(R)|core_clk_int      |   0.000|
-sram2_data(10)       |    4.566(R)|core_clk_int      |   0.000|
-sram2_data(11)       |    4.574(R)|core_clk_int      |   0.000|
-sram2_data(12)       |    4.592(R)|core_clk_int      |   0.000|
-sram2_data(13)       |    4.601(R)|core_clk_int      |   0.000|
-sram2_data(14)       |    4.567(R)|core_clk_int      |   0.000|
-sram2_data(15)       |    4.571(R)|core_clk_int      |   0.000|
-sram2_data(16)       |    4.588(R)|core_clk_int      |   0.000|
-sram2_data(17)       |    4.594(R)|core_clk_int      |   0.000|
-sram2_data(18)       |    4.423(R)|core_clk_int      |   0.000|
-sram2_data(19)       |    4.423(R)|core_clk_int      |   0.000|
-sram2_data(20)       |    4.450(R)|core_clk_int      |   0.000|
-sram2_data(21)       |    4.446(R)|core_clk_int      |   0.000|
-sram2_data(22)       |    4.437(R)|core_clk_int      |   0.000|
-sram2_data(23)       |    4.429(R)|core_clk_int      |   0.000|
-sram2_data(24)       |    4.420(R)|core_clk_int      |   0.000|
-sram2_data(25)       |    4.414(R)|core_clk_int      |   0.000|
-sram2_data(26)       |    4.448(R)|core_clk_int      |   0.000|
-sram2_data(27)       |    4.433(R)|core_clk_int      |   0.000|
-sram2_data(28)       |    4.441(R)|core_clk_int      |   0.000|
-sram2_data(29)       |    4.450(R)|core_clk_int      |   0.000|
-sram2_data(30)       |    4.454(R)|core_clk_int      |   0.000|
-sram2_data(31)       |    4.428(R)|core_clk_int      |   0.000|
-sram2_data(32)       |    4.433(R)|core_clk_int      |   0.000|
-sram2_data(33)       |    4.442(R)|core_clk_int      |   0.000|
-sram2_data(34)       |    4.447(R)|core_clk_int      |   0.000|
-sram2_data(35)       |    4.458(R)|core_clk_int      |   0.000|
-sram2_we             |    4.453(R)|core_clk_int      |   0.000|
+sram1_addr(0)        |    4.577(R)|core_clk_int      |   0.000|
+sram1_addr(1)        |    4.578(R)|core_clk_int      |   0.000|
+sram1_addr(2)        |    4.574(R)|core_clk_int      |   0.000|
+sram1_addr(3)        |    4.579(R)|core_clk_int      |   0.000|
+sram1_addr(4)        |    4.602(R)|core_clk_int      |   0.000|
+sram1_addr(5)        |    4.638(R)|core_clk_int      |   0.000|
+sram1_addr(6)        |    4.644(R)|core_clk_int      |   0.000|
+sram1_addr(7)        |    4.593(R)|core_clk_int      |   0.000|
+sram1_addr(8)        |    4.575(R)|core_clk_int      |   0.000|
+sram1_addr(9)        |    4.463(R)|core_clk_int      |   0.000|
+sram1_addr(10)       |    4.458(R)|core_clk_int      |   0.000|
+sram1_addr(11)       |    4.437(R)|core_clk_int      |   0.000|
+sram1_addr(12)       |    4.453(R)|core_clk_int      |   0.000|
+sram1_addr(13)       |    4.464(R)|core_clk_int      |   0.000|
+sram1_addr(14)       |    4.572(R)|core_clk_int      |   0.000|
+sram1_addr(15)       |    4.574(R)|core_clk_int      |   0.000|
+sram1_addr(16)       |    4.584(R)|core_clk_int      |   0.000|
+sram1_addr(17)       |    4.589(R)|core_clk_int      |   0.000|
+sram1_addr(18)       |    4.469(R)|core_clk_int      |   0.000|
+sram1_bw(0)          |    4.579(R)|core_clk_int      |   0.000|
+sram1_bw(1)          |    4.595(R)|core_clk_int      |   0.000|
+sram1_bw(2)          |    4.611(R)|core_clk_int      |   0.000|
+sram1_bw(3)          |    4.632(R)|core_clk_int      |   0.000|
+sram1_data(0)        |    4.461(R)|core_clk_int      |   0.000|
+sram1_data(1)        |    4.462(R)|core_clk_int      |   0.000|
+sram1_data(2)        |    4.436(R)|core_clk_int      |   0.000|
+sram1_data(3)        |    4.431(R)|core_clk_int      |   0.000|
+sram1_data(4)        |    4.454(R)|core_clk_int      |   0.000|
+sram1_data(5)        |    4.446(R)|core_clk_int      |   0.000|
+sram1_data(6)        |    4.441(R)|core_clk_int      |   0.000|
+sram1_data(7)        |    4.425(R)|core_clk_int      |   0.000|
+sram1_data(8)        |    4.420(R)|core_clk_int      |   0.000|
+sram1_data(9)        |    4.430(R)|core_clk_int      |   0.000|
+sram1_data(10)       |    4.433(R)|core_clk_int      |   0.000|
+sram1_data(11)       |    4.439(R)|core_clk_int      |   0.000|
+sram1_data(12)       |    4.440(R)|core_clk_int      |   0.000|
+sram1_data(13)       |    4.463(R)|core_clk_int      |   0.000|
+sram1_data(14)       |    4.444(R)|core_clk_int      |   0.000|
+sram1_data(15)       |    4.449(R)|core_clk_int      |   0.000|
+sram1_data(16)       |    4.446(R)|core_clk_int      |   0.000|
+sram1_data(17)       |    4.460(R)|core_clk_int      |   0.000|
+sram1_data(18)       |    4.599(R)|core_clk_int      |   0.000|
+sram1_data(19)       |    4.623(R)|core_clk_int      |   0.000|
+sram1_data(20)       |    4.626(R)|core_clk_int      |   0.000|
+sram1_data(21)       |    4.601(R)|core_clk_int      |   0.000|
+sram1_data(22)       |    4.603(R)|core_clk_int      |   0.000|
+sram1_data(23)       |    4.605(R)|core_clk_int      |   0.000|
+sram1_data(24)       |    4.609(R)|core_clk_int      |   0.000|
+sram1_data(25)       |    4.596(R)|core_clk_int      |   0.000|
+sram1_data(26)       |    4.600(R)|core_clk_int      |   0.000|
+sram1_data(27)       |    4.630(R)|core_clk_int      |   0.000|
+sram1_data(28)       |    4.640(R)|core_clk_int      |   0.000|
+sram1_data(29)       |    4.626(R)|core_clk_int      |   0.000|
+sram1_data(30)       |    4.675(R)|core_clk_int      |   0.000|
+sram1_data(31)       |    4.680(R)|core_clk_int      |   0.000|
+sram1_data(32)       |    4.637(R)|core_clk_int      |   0.000|
+sram1_data(33)       |    4.639(R)|core_clk_int      |   0.000|
+sram1_data(34)       |    4.678(R)|core_clk_int      |   0.000|
+sram1_data(35)       |    4.683(R)|core_clk_int      |   0.000|
+sram1_we             |    4.567(R)|core_clk_int      |   0.000|
+sram2_addr(0)        |    4.440(R)|core_clk_int      |   0.000|
+sram2_addr(1)        |    4.456(R)|core_clk_int      |   0.000|
+sram2_addr(2)        |    4.448(R)|core_clk_int      |   0.000|
+sram2_addr(3)        |    4.403(R)|core_clk_int      |   0.000|
+sram2_addr(4)        |    4.413(R)|core_clk_int      |   0.000|
+sram2_addr(5)        |    4.430(R)|core_clk_int      |   0.000|
+sram2_addr(6)        |    4.448(R)|core_clk_int      |   0.000|
+sram2_addr(7)        |    4.439(R)|core_clk_int      |   0.000|
+sram2_addr(8)        |    4.609(R)|core_clk_int      |   0.000|
+sram2_addr(9)        |    4.449(R)|core_clk_int      |   0.000|
+sram2_addr(10)       |    4.565(R)|core_clk_int      |   0.000|
+sram2_addr(11)       |    4.606(R)|core_clk_int      |   0.000|
+sram2_addr(12)       |    4.601(R)|core_clk_int      |   0.000|
+sram2_addr(13)       |    4.570(R)|core_clk_int      |   0.000|
+sram2_addr(14)       |    4.458(R)|core_clk_int      |   0.000|
+sram2_addr(15)       |    4.468(R)|core_clk_int      |   0.000|
+sram2_addr(16)       |    4.434(R)|core_clk_int      |   0.000|
+sram2_addr(17)       |    4.441(R)|core_clk_int      |   0.000|
+sram2_addr(18)       |    4.443(R)|core_clk_int      |   0.000|
+sram2_bw(0)          |    4.469(R)|core_clk_int      |   0.000|
+sram2_bw(1)          |    4.425(R)|core_clk_int      |   0.000|
+sram2_bw(2)          |    4.422(R)|core_clk_int      |   0.000|
+sram2_bw(3)          |    4.430(R)|core_clk_int      |   0.000|
+sram2_data(0)        |    4.597(R)|core_clk_int      |   0.000|
+sram2_data(1)        |    4.592(R)|core_clk_int      |   0.000|
+sram2_data(2)        |    4.583(R)|core_clk_int      |   0.000|
+sram2_data(3)        |    4.601(R)|core_clk_int      |   0.000|
+sram2_data(4)        |    4.604(R)|core_clk_int      |   0.000|
+sram2_data(5)        |    4.627(R)|core_clk_int      |   0.000|
+sram2_data(6)        |    4.620(R)|core_clk_int      |   0.000|
+sram2_data(7)        |    4.667(R)|core_clk_int      |   0.000|
+sram2_data(8)        |    4.658(R)|core_clk_int      |   0.000|
+sram2_data(9)        |    4.589(R)|core_clk_int      |   0.000|
+sram2_data(10)       |    4.567(R)|core_clk_int      |   0.000|
+sram2_data(11)       |    4.575(R)|core_clk_int      |   0.000|
+sram2_data(12)       |    4.593(R)|core_clk_int      |   0.000|
+sram2_data(13)       |    4.602(R)|core_clk_int      |   0.000|
+sram2_data(14)       |    4.568(R)|core_clk_int      |   0.000|
+sram2_data(15)       |    4.572(R)|core_clk_int      |   0.000|
+sram2_data(16)       |    4.589(R)|core_clk_int      |   0.000|
+sram2_data(17)       |    4.595(R)|core_clk_int      |   0.000|
+sram2_data(18)       |    4.424(R)|core_clk_int      |   0.000|
+sram2_data(19)       |    4.424(R)|core_clk_int      |   0.000|
+sram2_data(20)       |    4.451(R)|core_clk_int      |   0.000|
+sram2_data(21)       |    4.447(R)|core_clk_int      |   0.000|
+sram2_data(22)       |    4.438(R)|core_clk_int      |   0.000|
+sram2_data(23)       |    4.430(R)|core_clk_int      |   0.000|
+sram2_data(24)       |    4.421(R)|core_clk_int      |   0.000|
+sram2_data(25)       |    4.415(R)|core_clk_int      |   0.000|
+sram2_data(26)       |    4.449(R)|core_clk_int      |   0.000|
+sram2_data(27)       |    4.434(R)|core_clk_int      |   0.000|
+sram2_data(28)       |    4.442(R)|core_clk_int      |   0.000|
+sram2_data(29)       |    4.451(R)|core_clk_int      |   0.000|
+sram2_data(30)       |    4.455(R)|core_clk_int      |   0.000|
+sram2_data(31)       |    4.429(R)|core_clk_int      |   0.000|
+sram2_data(32)       |    4.434(R)|core_clk_int      |   0.000|
+sram2_data(33)       |    4.443(R)|core_clk_int      |   0.000|
+sram2_data(34)       |    4.448(R)|core_clk_int      |   0.000|
+sram2_data(35)       |    4.459(R)|core_clk_int      |   0.000|
+sram2_we             |    4.454(R)|core_clk_int      |   0.000|
 ---------------------+------------+------------------+--------+
 
 Clock to Setup on destination clock core_clk
@@ -825,8 +1017,8 @@ Clock to Setup on destination clock core_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-core_clk       |    7.991|         |         |         |
-cpci_clk       |    7.991|         |         |         |
+core_clk       |    7.984|         |         |         |
+cpci_clk       |    7.984|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock cpci_clk
@@ -834,8 +1026,8 @@ Clock to Setup on destination clock cpci_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-core_clk       |    7.991|         |         |         |
-cpci_clk       |   14.627|         |         |         |
+core_clk       |    7.984|         |         |         |
+cpci_clk       |   11.151|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock gtx_clk
@@ -843,7 +1035,7 @@ Clock to Setup on destination clock gtx_clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-gtx_clk        |    7.773|         |    2.282|    1.703|
+gtx_clk        |    7.942|         |    2.381|    2.128|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rgmii_0_rxc
@@ -851,7 +1043,7 @@ Clock to Setup on destination clock rgmii_0_rxc
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rgmii_0_rxc    |    6.975|    1.313|         |    1.347|
+rgmii_0_rxc    |    7.706|    1.244|         |    1.526|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rgmii_1_rxc
@@ -859,7 +1051,7 @@ Clock to Setup on destination clock rgmii_1_rxc
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rgmii_1_rxc    |    6.981|    1.721|         |    1.647|
+rgmii_1_rxc    |    7.771|    1.617|         |    1.310|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rgmii_2_rxc
@@ -867,7 +1059,7 @@ Clock to Setup on destination clock rgmii_2_rxc
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rgmii_2_rxc    |    7.885|    1.536|         |    1.692|
+rgmii_2_rxc    |    7.954|    1.820|         |    1.874|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rgmii_3_rxc
@@ -875,7 +1067,7 @@ Clock to Setup on destination clock rgmii_3_rxc
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-rgmii_3_rxc    |    7.823|    1.799|         |    2.800|
+rgmii_3_rxc    |    7.269|    1.690|         |    1.522|
 ---------------+---------+---------+---------+---------+
 
 TIMEGRP "CPCI_DATA" OFFSET = OUT 10 ns AFTER COMP "cpci_clk";
@@ -1128,26 +1320,26 @@ sram2_data(35)                                 |        2.075|        0.044|
 Timing summary:
 ---------------
 
-Timing errors: 0  Score: 0
+Timing errors: 4  Score: 4161
 
-Constraints cover 1433986 paths, 4 nets, and 116557 connections
+Constraints cover 1438405 paths, 4 nets, and 119870 connections
 
 Design statistics:
-   Minimum period:  14.627ns   (Maximum frequency:  68.367MHz)
-   Maximum path delay from/to any node:   1.799ns
+   Minimum period:  11.151ns   (Maximum frequency:  89.678MHz)
+   Maximum path delay from/to any node:   1.820ns
    Maximum net delay:   0.603ns
    Minimum input required time before clock:   2.865ns
    Minimum output required time after clock:   4.689ns
 
 
-Analysis completed Sat Feb 15 16:00:18 2025 
+Analysis completed Mon Feb 17 17:14:23 2025 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 1036 MB
+Peak Memory Usage: 1059 MB
 
 
 

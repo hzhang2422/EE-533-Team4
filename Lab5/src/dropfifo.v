@@ -7,11 +7,11 @@
 // \   \   \/     Version : 10.1
 //  \   \         Application : sch2verilog
 //  /   /         Filename : dropfifo.vf
-// /___/   /\     Timestamp : 01/31/2025 11:13:35
+// /___/   /\     Timestamp : 01/31/2025 19:37:08
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family virtex2p -w "C:/Documents and Settings/student/lab3_sch/dropfifo.sch" dropfifo.vf
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family virtex2p -w C:/yzhou477/lab3_beta/dropfifo.sch dropfifo.vf
 //Design Name: dropfifo
 //Device: virtex2p
 //Purpose:
@@ -219,65 +219,6 @@ module CB8CLE_MXILINX_dropfifo(C,
 endmodule
 `timescale 1ns / 1ps
 
-module COMP8_MXILINX_dropfifo(A, 
-                              B, 
-                              EQ);
-
-    input [7:0] A;
-    input [7:0] B;
-   output EQ;
-   
-   wire AB0;
-   wire AB1;
-   wire AB2;
-   wire AB3;
-   wire AB4;
-   wire AB5;
-   wire AB6;
-   wire AB7;
-   wire AB03;
-   wire AB47;
-   
-   AND4 I_36_32 (.I0(AB7), 
-                 .I1(AB6), 
-                 .I2(AB5), 
-                 .I3(AB4), 
-                 .O(AB47));
-   XNOR2 I_36_33 (.I0(B[6]), 
-                  .I1(A[6]), 
-                  .O(AB6));
-   XNOR2 I_36_34 (.I0(B[7]), 
-                  .I1(A[7]), 
-                  .O(AB7));
-   XNOR2 I_36_35 (.I0(B[5]), 
-                  .I1(A[5]), 
-                  .O(AB5));
-   XNOR2 I_36_36 (.I0(B[4]), 
-                  .I1(A[4]), 
-                  .O(AB4));
-   AND4 I_36_41 (.I0(AB3), 
-                 .I1(AB2), 
-                 .I2(AB1), 
-                 .I3(AB0), 
-                 .O(AB03));
-   XNOR2 I_36_42 (.I0(B[2]), 
-                  .I1(A[2]), 
-                  .O(AB2));
-   XNOR2 I_36_43 (.I0(B[3]), 
-                  .I1(A[3]), 
-                  .O(AB3));
-   XNOR2 I_36_44 (.I0(B[1]), 
-                  .I1(A[1]), 
-                  .O(AB1));
-   XNOR2 I_36_45 (.I0(B[0]), 
-                  .I1(A[0]), 
-                  .O(AB0));
-   AND2 I_36_50 (.I0(AB47), 
-                 .I1(AB03), 
-                 .O(EQ));
-endmodule
-`timescale 1ns / 1ps
-
 module FTCE_MXILINX_dropfifo(C, 
                              CE, 
                              CLR, 
@@ -418,6 +359,65 @@ module CB8CE_MXILINX_dropfifo(C,
 endmodule
 `timescale 1ns / 1ps
 
+module COMP8_MXILINX_dropfifo(A, 
+                              B, 
+                              EQ);
+
+    input [7:0] A;
+    input [7:0] B;
+   output EQ;
+   
+   wire AB0;
+   wire AB1;
+   wire AB2;
+   wire AB3;
+   wire AB4;
+   wire AB5;
+   wire AB6;
+   wire AB7;
+   wire AB03;
+   wire AB47;
+   
+   AND4 I_36_32 (.I0(AB7), 
+                 .I1(AB6), 
+                 .I2(AB5), 
+                 .I3(AB4), 
+                 .O(AB47));
+   XNOR2 I_36_33 (.I0(B[6]), 
+                  .I1(A[6]), 
+                  .O(AB6));
+   XNOR2 I_36_34 (.I0(B[7]), 
+                  .I1(A[7]), 
+                  .O(AB7));
+   XNOR2 I_36_35 (.I0(B[5]), 
+                  .I1(A[5]), 
+                  .O(AB5));
+   XNOR2 I_36_36 (.I0(B[4]), 
+                  .I1(A[4]), 
+                  .O(AB4));
+   AND4 I_36_41 (.I0(AB3), 
+                 .I1(AB2), 
+                 .I2(AB1), 
+                 .I3(AB0), 
+                 .O(AB03));
+   XNOR2 I_36_42 (.I0(B[2]), 
+                  .I1(A[2]), 
+                  .O(AB2));
+   XNOR2 I_36_43 (.I0(B[3]), 
+                  .I1(A[3]), 
+                  .O(AB3));
+   XNOR2 I_36_44 (.I0(B[1]), 
+                  .I1(A[1]), 
+                  .O(AB1));
+   XNOR2 I_36_45 (.I0(B[0]), 
+                  .I1(A[0]), 
+                  .O(AB0));
+   AND2 I_36_50 (.I0(AB47), 
+                 .I1(AB03), 
+                 .O(EQ));
+endmodule
+`timescale 1ns / 1ps
+
 module FD8CE_MXILINX_dropfifo(C, 
                               CE, 
                               CLR, 
@@ -504,93 +504,93 @@ module dropfifo(clk,
    output [71:0] out_fifo;
    output valid_data;
    
+   wire [71:0] in_fifo0;
+   wire [7:0] raddr;
    wire [7:0] waddr;
-   wire XLXN_1;
-   wire XLXN_2;
-   wire XLXN_3;
-   wire [7:0] XLXN_4;
-   wire [7:0] XLXN_9;
-   wire XLXN_15;
-   wire [71:0] XLXN_18;
-   wire XLXN_25;
-   wire XLXN_38;
-   wire XLXN_39;
-   wire XLXN_123;
-   wire XLXN_124;
-   wire XLXN_125;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_19;
+   wire [7:0] XLXN_25;
+   wire XLXN_28;
+   wire XLXN_29;
+   wire XLXN_30;
+   wire XLXN_31;
+   wire XLXN_33;
+   wire XLXN_37;
+   wire XLXN_56;
    
    FD XLXI_1 (.C(clk), 
               .D(firstword), 
-              .Q(XLXN_1));
+              .Q(XLXN_31));
    defparam XLXI_1.INIT = 1'b0;
    FD XLXI_2 (.C(clk), 
               .D(lastword), 
-              .Q(XLXN_2));
+              .Q(XLXN_30));
    defparam XLXI_2.INIT = 1'b0;
-   FD8CE_MXILINX_dropfifo XLXI_3 (.C(clk), 
-                                  .CE(XLXN_39), 
-                                  .CLR(rst), 
-                                  .D(waddr[7:0]), 
-                                  .Q(XLXN_4[7:0]));
-   // synthesis attribute HU_SET of XLXI_3 is "XLXI_3_17"
+   FD XLXI_3 (.C(clk), 
+              .D(drop_pkt), 
+              .Q(XLXN_28));
+   defparam XLXI_3.INIT = 1'b0;
    FD XLXI_4 (.C(clk), 
               .D(fifowrite), 
-              .Q(XLXN_25));
+              .Q(XLXN_56));
    defparam XLXI_4.INIT = 1'b0;
-   CB8CLE_MXILINX_dropfifo XLXI_5 (.C(clk), 
-                                   .CE(XLXN_25), 
-                                   .CLR(rst), 
-                                   .D(XLXN_4[7:0]), 
-                                   .L(XLXN_123), 
-                                   .CEO(), 
-                                   .Q(waddr[7:0]), 
-                                   .TC());
-   // synthesis attribute HU_SET of XLXI_5 is "XLXI_5_21"
+   FD8CE_MXILINX_dropfifo XLXI_5 (.C(clk), 
+                                  .CE(XLXN_33), 
+                                  .CLR(rst), 
+                                  .D(waddr[7:0]), 
+                                  .Q(XLXN_25[7:0]));
+   // synthesis attribute HU_SET of XLXI_5 is "XLXI_5_17"
    COMP8_MXILINX_dropfifo XLXI_6 (.A(waddr[7:0]), 
-                                  .B(XLXN_9[7:0]), 
-                                  .EQ(XLXN_124));
-   // synthesis attribute HU_SET of XLXI_6 is "XLXI_6_19"
-   COMP8_MXILINX_dropfifo XLXI_7 (.A(XLXN_9[7:0]), 
-                                  .B(XLXN_4[7:0]), 
-                                  .EQ(XLXN_125));
-   // synthesis attribute HU_SET of XLXI_7 is "XLXI_7_20"
-   reg9B XLXI_8 (.ce(XLXN_38), 
-                 .clk(clk), 
-                 .clr(rst), 
-                 .d(in_fifo[71:0]), 
-                 .q(XLXN_18[71:0]));
-   CB8CE_MXILINX_dropfifo XLXI_11 (.C(clk), 
-                                   .CE(XLXN_15), 
-                                   .CLR(rst), 
-                                   .CEO(), 
-                                   .Q(XLXN_9[7:0]), 
-                                   .TC());
-   // synthesis attribute HU_SET of XLXI_11 is "XLXI_11_18"
-   FDC XLXI_12 (.C(clk), 
-                .CLR(rst), 
-                .D(XLXN_15), 
-                .Q(valid_data));
-   defparam XLXI_12.INIT = 1'b0;
-   FD XLXI_14 (.C(clk), 
-               .D(drop_pkt), 
-               .Q(XLXN_123));
-   defparam XLXI_14.INIT = 1'b0;
-   OR2 XLXI_32 (.I0(XLXN_2), 
-                .I1(XLXN_1), 
-                .O(XLXN_3));
-   AND2B1 XLXI_33 (.I0(XLXN_123), 
-                   .I1(XLXN_3), 
-                   .O(XLXN_39));
-   AND3B2 XLXI_34 (.I0(XLXN_125), 
-                   .I1(XLXN_124), 
+                                  .B(raddr[7:0]), 
+                                  .EQ(XLXN_9));
+   // synthesis attribute HU_SET of XLXI_6 is "XLXI_6_18"
+   COMP8_MXILINX_dropfifo XLXI_7 (.A(raddr[7:0]), 
+                                  .B(XLXN_25[7:0]), 
+                                  .EQ(XLXN_19));
+   // synthesis attribute HU_SET of XLXI_7 is "XLXI_7_19"
+   FDC XLXI_8 (.C(clk), 
+               .CLR(rst), 
+               .D(XLXN_10), 
+               .Q(valid_data));
+   defparam XLXI_8.INIT = 1'b0;
+   CB8CE_MXILINX_dropfifo XLXI_9 (.C(clk), 
+                                  .CE(XLXN_10), 
+                                  .CLR(rst), 
+                                  .CEO(), 
+                                  .Q(raddr[7:0]), 
+                                  .TC());
+   // synthesis attribute HU_SET of XLXI_9 is "XLXI_9_20"
+   CB8CLE_MXILINX_dropfifo XLXI_10 (.C(clk), 
+                                    .CE(XLXN_56), 
+                                    .CLR(rst), 
+                                    .D(XLXN_25[7:0]), 
+                                    .L(XLXN_28), 
+                                    .CEO(), 
+                                    .Q(waddr[7:0]), 
+                                    .TC());
+   // synthesis attribute HU_SET of XLXI_10 is "XLXI_10_21"
+   reg9B XLXI_11 (.ce(XLXN_37), 
+                  .clk(clk), 
+                  .clr(rst), 
+                  .d(in_fifo[71:0]), 
+                  .q(in_fifo0[71:0]));
+   OR2 XLXI_12 (.I0(XLXN_30), 
+                .I1(XLXN_31), 
+                .O(XLXN_29));
+   AND2B1 XLXI_13 (.I0(XLXN_28), 
+                   .I1(XLXN_29), 
+                   .O(XLXN_33));
+   AND3B2 XLXI_14 (.I0(XLXN_19), 
+                   .I1(XLXN_9), 
                    .I2(fiforead), 
-                   .O(XLXN_15));
-   VCC XLXI_37 (.P(XLXN_38));
-   mem_9B XLXI_38 (.addra(waddr[7:0]), 
-                   .addrb(XLXN_9[7:0]), 
-                   .clka(clk), 
-                   .clkb(clk), 
-                   .dina(XLXN_18[71:0]), 
-                   .wea(XLXN_25), 
-                   .doutb(out_fifo[71:0]));
+                   .O(XLXN_10));
+   VCC XLXI_15 (.P(XLXN_37));
+   dual9Bmem XLXI_31 (.addra(waddr[7:0]), 
+                      .addrb(raddr[7:0]), 
+                      .clka(clk), 
+                      .clkb(clk), 
+                      .dina(in_fifo0[71:0]), 
+                      .wea(XLXN_56), 
+                      .doutb(out_fifo[71:0]));
 endmodule

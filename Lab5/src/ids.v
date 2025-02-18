@@ -1,5 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // vim:set shiftwidth=3 softtabstop=3 expandtab:
+// $Id: module_template 2008-03-13 gac1 $
+//
 // Module: ids.v
 // Project: NF2.1
 // Description: Defines a simple ids module for the user data path.  The
@@ -11,14 +13,6 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 `timescale 1ns/1ps
-
-// `define UDP_REG_ADDR_WIDTH 16
-// `define CPCI_NF2_DATA_WIDTH 16
-// `define IDS_BLOCK_TAG 1
-// `define IDS_REG_ADDR_WIDTH 16
-`define IDS_BLOCK_TAG 1
-`define IDS_BLOCK_ADDR `CORE_BLOCK_ADDR_WIDTH
-`define IDS_REG_ADDR_WIDTH `CORE_REG_ADDR_WIDTH
 
 module ids 
    #(
@@ -59,28 +53,21 @@ module ids
 
    // Define the log2 function
    // `LOG2_FUNC
-	
 
    //------------------------- Signals-------------------------------
    
-   wire [DATA_WIDTH-1:0]         in_fifo_data;
-   wire [CTRL_WIDTH-1:0]         in_fifo_ctrl;
-	
-   // reg [DATA_WIDTH-1:0]         in_fifo_data;
-   // reg [CTRL_WIDTH-1:0]         in_fifo_ctrl;
+   reg [DATA_WIDTH-1:0]         in_fifo_data;
+   reg [CTRL_WIDTH-1:0]         in_fifo_ctrl;
 
+   wire [DATA_WIDTH-1:0]         in_fifo_data_p;
+   wire [CTRL_WIDTH-1:0]         in_fifo_ctrl_p;		
+	
    wire                          in_fifo_nearly_full;
    wire                          in_fifo_empty;
 
    reg                           in_fifo_rd_en;
    reg                           out_wr_int;
-
-   // reg			         out_wr_int_next;
-	
-	wire matcher_en;
-   wire matcher_ce;
-   wire matcher_reset;
-   wire matcher_match;
+   reg                           out_wr_int_next;																 
 
    // software registers 
    wire [31:0]                   pattern_high;
@@ -102,18 +89,12 @@ module ids
    parameter                     START = 2'b00;
    parameter                     HEADER = 2'b01;
    parameter                     PAYLOAD = 2'b10;
-   // parameter                  EMPTY = 4'b0001;
-   // parameter                  FILLING = 4'b0010;
-   // parameter                  FULL = 4'b0100;
-   // parameter                  DRAINING = 4'b1000;
+
  
    //------------------------- Local assignments -------------------------------
 
    assign in_rdy     = !in_fifo_nearly_full;
-//   assign out_wr     = out_wr_int;
-//   assign out_data   = in_fifo_data;
-//   assign out_ctrl   = in_fifo_ctrl;
-   assign matcher_en = in_pkt_body;
+   assign matcher_en = (!in_fifo_empty && out_rdy && in_pkt_body);
    assign matcher_ce = (!in_fifo_empty && out_rdy);
    assign matcher_reset = (reset || ids_cmd[0] || end_of_pkt);
 
@@ -126,7 +107,7 @@ module ids
       .din           ({in_ctrl, in_data}),   // Data in
       .wr_en         (in_wr),                // Write enable
       .rd_en         (in_fifo_rd_en),        // Read the next word 
-      .dout          ({in_fifo_ctrl, in_fifo_data}),
+      .dout          ({in_fifo_ctrl_p, in_fifo_data_p}),
       .full          (),
       .nearly_full   (in_fifo_nearly_full),
       .empty         (in_fifo_empty),
@@ -138,9 +119,8 @@ module ids
       .ce            (matcher_ce),           // data enable
       .match_en      (matcher_en),           // match enable
       .clk           (clk),
-      .pipe1         ({in_ctrl, in_data}),   // Data in
+      .pipe1         ({in_fifo_ctrl, in_fifo_data}),   // Data in
       .hwregA        ({pattern_high, pattern_low}),   // pattern in
-      // .hwregA        (64'b0111111100000000000000000000000000000000000000000000000000000111),   // pattern in
       .match         (matcher_match),        // match out
       .mrst          (matcher_reset)         // reset in
    );
@@ -162,9 +142,9 @@ module ids
    generic_regs
    #( 
       .UDP_REG_SRC_WIDTH   (UDP_REG_SRC_WIDTH),
-      .TAG                 (`IDS_BLOCK_TAG),          // Tag -- eg. MODULE_TAG
+      .TAG                 (`IDS_BLOCK_ADDR),          // Tag -- eg. MODULE_TAG
       .REG_ADDR_WIDTH      (`IDS_REG_ADDR_WIDTH),     // Width of block addresses -- eg. MODULE_REG_ADDR_WIDTH
-      .NUM_COUNTERS        (1),                 // Number of counters
+      .NUM_COUNTERS        (0),                 // Number of counters
       .NUM_SOFTWARE_REGS   (3),                 // Number of sw regs
       .NUM_HARDWARE_REGS   (1)                  // Number of hw regs
    ) module_regs (
@@ -203,20 +183,20 @@ module ids
       matches_next = matches;
       header_counter_next = header_counter;
       in_fifo_rd_en = 0;
-      out_wr_int = 0;
+      out_wr_int_next = 0;
       //out_data = 0;
       end_of_pkt_next = end_of_pkt;
       in_pkt_body_next = in_pkt_body;
       begin_pkt_next = begin_pkt;
       
       if (!in_fifo_empty && out_rdy) begin
-         out_wr_int = 1;
+         out_wr_int_next = 1;
          in_fifo_rd_en = 1;
          //out_data = in_fifo_data;
          
          case(state)
             START: begin
-              if (in_fifo_ctrl != 0) begin
+               if (in_fifo_ctrl_p != 0) begin
                   state_next = HEADER;
                   begin_pkt_next = 1;
                   end_of_pkt_next = 0;   // takes matcher out of reset
@@ -224,7 +204,7 @@ module ids
             end
             HEADER: begin
                begin_pkt_next = 0;
-               if (in_fifo_ctrl == 0) begin
+               if (in_fifo_ctrl_p == 0) begin
                   header_counter_next = header_counter + 1'b1;
                   if (header_counter_next == 3) begin
                     state_next = PAYLOAD;
@@ -232,7 +212,7 @@ module ids
                end
             end
             PAYLOAD: begin
-               if (in_fifo_ctrl != 0) begin
+               if (in_fifo_ctrl_p != 0) begin
                   state_next = START;
                   header_counter_next = 0;
                   if (matcher_match) begin
@@ -257,6 +237,8 @@ module ids
          begin_pkt <= 0;
          end_of_pkt <= 0;
          in_pkt_body <= 0;
+         in_fifo_ctrl <= 0;
+         in_fifo_data <=0;									
       end
       else begin
          if (ids_cmd[0]) matches <= 0;
@@ -266,9 +248,11 @@ module ids
          begin_pkt <= begin_pkt_next;
          end_of_pkt <= end_of_pkt_next;
          in_pkt_body <= in_pkt_body_next;
-         
-         counter <= 0;
+         in_fifo_ctrl <= in_fifo_ctrl_p;
+         in_fifo_data <= in_fifo_data_p;
+         out_wr_int <= out_wr_int_next;					
       end // else: !if(reset)
    end // always @ (posedge clk)   
+
 
 endmodule 

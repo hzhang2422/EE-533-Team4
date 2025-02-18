@@ -10,6 +10,7 @@ Loading design module
 Loading design module
 "/root/netfpga/projects/lab5/synth/bram_cam_unencoded_32x32.ngc"...
 Loading design module "/root/netfpga/projects/lab5/synth/syncfifo_512x72.ngc"...
+Loading design module "/root/netfpga/projects/lab5/synth/dual9Bmem.ngc"...
 Loading design module
 "/root/netfpga/projects/lab5/synth/cdq_tx_fifo_256x72_to_36.ngc"...
 Loading design module
@@ -1280,6 +1281,8 @@ WARNING:NgdBuild:452 - logical net
 WARNING:NgdBuild:452 - logical net
    'nf2_core/user_data_path/output_queues/oq_regs/oq_wr_addr_reg_wr_data(31)'
    has no driver
+WARNING:NgdBuild:452 - logical net 'nf2_core/user_data_path/ids/input_fifo/full'
+   has no driver
 WARNING:NgdBuild:452 - logical net
    'nf2_core/cpu_queues[3].cpu_dma_queue_i/cpu_q_dma_rd_rdy' has no driver
 WARNING:NgdBuild:452 - logical net
@@ -2200,9 +2203,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 880
+  Number of warnings: 881
 
-Total memory usage is 506300 kilobytes
+Total memory usage is 520544 kilobytes
 
 Writing NGD file "nf2_top.ngd" ...
 
