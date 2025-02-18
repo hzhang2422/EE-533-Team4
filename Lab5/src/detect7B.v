@@ -7,11 +7,11 @@
 // \   \   \/     Version : 10.1
 //  \   \         Application : sch2verilog
 //  /   /         Filename : detect7B.vf
-// /___/   /\     Timestamp : 01/31/2025 11:15:12
+// /___/   /\     Timestamp : 01/31/2025 19:37:05
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family virtex2p -w "C:/Documents and Settings/student/lab3_v/detect7B.sch" detect7B.vf
+//Command: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\sch2verilog.exe -intstyle ise -family virtex2p -w C:/yzhou477/lab3_beta/detect7B.sch detect7B.vf
 //Design Name: detect7B
 //Device: virtex2p
 //Purpose:
@@ -37,37 +37,37 @@ module detect7B(ce,
    output match;
    
    wire [71:0] pipe0;
-   wire [111:0] XLXN_7;
-   wire XLXN_10;
-   wire XLXN_22;
-   wire XLXN_29;
+   wire XLXN_12;
+   wire XLXN_17;
+   wire XLXN_27;
+   wire [111:0] XLXN_36;
    wire match_DUMMY;
    
    assign match = match_DUMMY;
-   reg9B XLXI_1 (.ce(ce), 
-                 .clk(clk), 
-                 .clr(XLXN_29), 
+   reg9B XLXI_3 (.ce(clk), 
+                 .clk(ce), 
+                 .clr(XLXN_17), 
                  .d(pipe1[71:0]), 
                  .q(pipe0[71:0]));
-   busmerge XLXI_2 (.da(pipe0[47:0]), 
-                    .db(pipe1[63:0]), 
-                    .q(XLXN_7[111:0]));
-   wordmatch XLXI_3 (.datacomp(hwregA[55:0]), 
-                     .datain(XLXN_7[111:0]), 
+   wordmatch XLXI_4 (.datacomp(hwregA[55:0]), 
+                     .datain(XLXN_36[111:0]), 
                      .wildcard(hwregA[62:56]), 
-                     .match(XLXN_10));
-   AND3B1 XLXI_4 (.I0(match_DUMMY), 
+                     .match(XLXN_27));
+   AND3B1 XLXI_5 (.I0(match_DUMMY), 
                   .I1(match_en), 
-                  .I2(XLXN_10), 
-                  .O(XLXN_22));
-   FDCE XLXI_5 (.C(clk), 
-                .CE(XLXN_22), 
-                .CLR(XLXN_29), 
-                .D(XLXN_22), 
-                .Q(match_DUMMY));
-   defparam XLXI_5.INIT = 1'b0;
+                  .I2(XLXN_27), 
+                  .O(XLXN_12));
    FD XLXI_6 (.C(clk), 
               .D(mrst), 
-              .Q(XLXN_29));
+              .Q(XLXN_17));
    defparam XLXI_6.INIT = 1'b0;
+   FDCE XLXI_7 (.C(clk), 
+                .CE(XLXN_12), 
+                .CLR(XLXN_17), 
+                .D(XLXN_12), 
+                .Q(match_DUMMY));
+   defparam XLXI_7.INIT = 1'b0;
+   busmerge XLXI_8 (.da(pipe0[47:0]), 
+                    .db(pipe1[63:0]), 
+                    .q(XLXN_36[111:0]));
 endmodule
