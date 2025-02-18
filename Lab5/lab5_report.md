@@ -62,17 +62,39 @@ Members: Yijie Zhou, Jiahe Wu, Haoyang Zhang, Bohan Fang
 
   This Perl script isused for interacting with the IDS registers in the NetFPGA system, providing functionalities for writing to registers, reading from registers, and resetting them.
 
+  
+
 - The netfpga compiler assigned  register address are:
 
   ![11](./img/11.png)
 
-- reset and writeswreg test:
-
-  ![12](./img/12.png)
-
 
 
 ### Step 4:
+
+Use idsreg to test if we detect and count the target string correctly in the message.
+
+- reset, set pattern and list all registers:
+
+  ![12](./img/12.png)
+
+  
+
+- send good packets:
+
+  ![13](./img/13.png)
+
+  
+
+- send bad packets:
+
+  ![14](./img/14.png)
+
+  
+
+- matches count:
+
+  ![15](./img/15.png)
 
 
 
