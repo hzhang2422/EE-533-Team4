@@ -67,13 +67,9 @@ Members: Yijie Zhou, Jiahe Wu, Haoyang Zhang, Bohan Fang
   
     ![4](./img/4.png)
   
-    
-  
   - simulation
   
     ![5](./img/5.png)
-  
-    
   
 - Data Memory (BRAM-based dual-port synchronous memory of 64-bit wide data I/O with  256 entries)
   - code
@@ -85,8 +81,6 @@ Members: Yijie Zhou, Jiahe Wu, Haoyang Zhang, Bohan Fang
   - simulation
   
     ![7](./img/7.png)
-
-
 
 ### Part 3 :  Pipeline Datapath
 
@@ -101,10 +95,10 @@ Members: Yijie Zhou, Jiahe Wu, Haoyang Zhang, Bohan Fang
 
   | Addr | Value                   |
   | ---- | ----------------------- |
-  | 0    | 64'h0000_0000_0000_0001 |
+  | 0    | 64'h0000_0000_0000_0004 |
   | 1    | 64'h0000_0000_0000_0002 |
   | 2    | 64'h0000_0000_0000_0003 |
-  | 3    | 64'h0000_0000_0000_0004 |
+  | 3    | 64'h0000_0000_0000_0064 |
   | 4    | 64'h0000_0000_0000_0005 |
   | 5    | 64'h0000_0000_0000_0006 |
   | 6    | 64'h0000_0000_0000_0007 |
@@ -114,20 +108,19 @@ Members: Yijie Zhou, Jiahe Wu, Haoyang Zhang, Bohan Fang
 
 - Instruction Memory
 
-  | Addr | WMemEn | WRegEn | Rs   | Rt   | Rd   | Comments  |
-  | ---- | ------ | ------ | ---- | ---- | ---- | --------- |
-  | 0    | 0      | 1      | 000  | 000  | 010  | ld R2, R0 |
-  | 1    | 0      | 1      | 000  | 000  | 011  | ld R3, R0 |
-  | 2    | 0      | 0      | 000  | 000  | 000  | Noop      |
-  | 3    | 0      | 0      | 000  | 000  | 000  | Noop      |
-  | 4    | 0      | 0      | 000  | 000  | 000  | Noop      |
-  | 5    | 1      | 0      | 000  | 001  | 010  | st R2, R1 |
-  | 6    | 0      | 0      | 000  | 000  | 000  | Noop      |
-  | 7    | 0      | 0      | 000  | 000  | 000  | Noop      |
+  | Addr | WMemEn | WRegEn | Rs   | Rt   | Rd   | Comments     |
+  | ---- | ------ | ------ | ---- | ---- | ---- | ------------ |
+  | 0    | 0      | 1      | 000  | 000  | 010  | ld R2, 0(R0) |
+  | 1    | 0      | 1      | 000  | 000  | 011  | ld R3, 0(R0) |
+  | 2    | 0      | 0      | 000  | 000  | 000  | Noop         |
+  | 3    | 0      | 0      | 000  | 000  | 000  | Noop         |
+  | 4    | 0      | 0      | 000  | 000  | 000  | Noop         |
+  | 5    | 1      | 0      | 000  | 010  | 011  | st R3, 0(R2) |
+  | 6    | 0      | 0      | 000  | 000  | 000  | Noop         |
+  | 7    | 0      | 0      | 000  | 000  | 000  | Noop         |
 
   
 
 - Simulation
 
-  ![8](./img/8.png)
-
+  ![pipeline_waveform](./img/pipeline_waveform.png)

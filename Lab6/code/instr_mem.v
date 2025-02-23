@@ -93,7 +93,7 @@ input wea;
 		.c_sinitb_value("0"),
 		.c_width_a(32),
 		.c_width_b(32),
-		.c_write_modea(2),
+		.c_write_modea(0),
 		.c_write_modeb(0),
 		.c_ybottom_addr("0"),
 		.c_yclka_is_rising(1),

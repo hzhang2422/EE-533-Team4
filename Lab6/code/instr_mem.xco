@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version K.31
-# Date: Sun Feb 23 01:52:37 2025
+# Date: Sun Feb 23 08:42:38 2025
 #
 ##############################################################
 #
@@ -67,9 +67,9 @@ CSET primitive_selection=Optimize_For_Area
 CSET select_primitive=16kx1
 CSET width_a=32
 CSET width_b=32
-CSET write_mode_port_a=No_Read_On_Write
+CSET write_mode_port_a=Read_After_Write
 CSET write_mode_port_b=Read_After_Write
 # END Parameters
 GENERATE
-# CRC: dd3bd7f5
+# CRC: 85d83131
 
