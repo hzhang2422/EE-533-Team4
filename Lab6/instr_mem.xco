@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version K.31
-# Date: Fri Feb 21 08:39:59 2025
+# Date: Sun Feb 23 01:52:37 2025
 #
 ##############################################################
 #
@@ -32,32 +32,44 @@ SET verilogsim = True
 SET vhdlsim = True
 # END Project Options
 # BEGIN Select
-SELECT Single_Port_Block_Memory family Xilinx,_Inc. 6.2
+SELECT Dual_Port_Block_Memory family Xilinx,_Inc. 6.3
 # END Select
 # BEGIN Parameters
-CSET active_clock_edge=Rising_Edge_Triggered
-CSET additional_output_pipe_stages=0
 CSET component_name=instr_mem
-CSET depth=1024
+CSET configuration_port_a=Write_Only
+CSET configuration_port_b=Read_Only
+CSET depth_a=512
+CSET depth_b=512
 CSET disable_warning_messages=true
-CSET enable_pin=false
-CSET enable_pin_polarity=Active_High
 CSET global_init_value=0
-CSET handshaking_pins=false
-CSET has_limit_data_pitch=false
-CSET init_pin=false
-CSET init_value=0
-CSET initialization_pin_polarity=Active_High
-CSET limit_data_pitch=18
 CSET load_init_file=false
-CSET port_configuration=Read_And_Write
+CSET port_a_active_clock_edge=Rising_Edge_Triggered
+CSET port_a_additional_output_pipe_stages=0
+CSET port_a_enable_pin=false
+CSET port_a_enable_pin_polarity=Active_High
+CSET port_a_handshaking_pins=false
+CSET port_a_init_pin=false
+CSET port_a_init_value=0
+CSET port_a_initialization_pin_polarity=Active_High
+CSET port_a_register_inputs=false
+CSET port_a_write_enable_polarity=Active_High
+CSET port_b_active_clock_edge=Rising_Edge_Triggered
+CSET port_b_additional_output_pipe_stages=0
+CSET port_b_enable_pin=false
+CSET port_b_enable_pin_polarity=Active_High
+CSET port_b_handshaking_pins=false
+CSET port_b_init_pin=false
+CSET port_b_init_value=0
+CSET port_b_initialization_pin_polarity=Active_High
+CSET port_b_register_inputs=false
+CSET port_b_write_enable_polarity=Active_High
 CSET primitive_selection=Optimize_For_Area
-CSET register_inputs=false
 CSET select_primitive=16kx1
-CSET width=16
-CSET write_enable_polarity=Active_High
-CSET write_mode=Read_Before_Write
+CSET width_a=32
+CSET width_b=32
+CSET write_mode_port_a=No_Read_On_Write
+CSET write_mode_port_b=Read_After_Write
 # END Parameters
 GENERATE
-# CRC: b129002a
+# CRC: dd3bd7f5
 
