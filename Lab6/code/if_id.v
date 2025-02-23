@@ -22,14 +22,16 @@
 // ===============================
 // Instruction Fetch (IF) Stage
 // ===============================
+`define PIPE_REG_ADDR_WIDTH 3
+
 module if_id (
 	input [31:0]								instr_in,
 	
 	output reg									memwrite,	
 	output reg									regwrite,
-	output reg [`PIPE_REG_ADDR_WIDTH:0]	rs,
-	output reg [`PIPE_REG_ADDR_WIDTH:0]	rt,
-	output reg [`PIPE_REG_ADDR_WIDTH:0]	rd,							
+	output reg [`PIPE_REG_ADDR_WIDTH - 1:0]	rs,
+	output reg [`PIPE_REG_ADDR_WIDTH - 1:0]	rt,
+	output reg [`PIPE_REG_ADDR_WIDTH - 1:0]	rd,							
 
    input 										clk,
    input 										reset

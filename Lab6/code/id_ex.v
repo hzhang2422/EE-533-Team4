@@ -3,6 +3,7 @@
 // ===============================
 // Instruction Decode (ID) Stage
 // ===============================
+`define PIPE_REG_ADDR_WIDTH 3
 
 module id_ex (
 	input											regwrite_in,
