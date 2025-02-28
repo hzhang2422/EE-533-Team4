@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nf:module xmlns:nf="http://www.NetFPGA.org/NF2_register_system" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.NetFPGA.org/NF2_register_system NF2_register_system.xsd ">
+	<nf:name>pipeline</nf:name>
+	<nf:prefix>pipeline</nf:prefix>
+	<nf:location>udp</nf:location>
+	<nf:description>Registers for PIPELINE</nf:description>
+	<nf:blocksize>64</nf:blocksize>
+	<nf:registers>
+		<nf:register>
+		  <nf:name>mem_raddr_ver</nf:name>
+			<nf:description>D-MEM Read Address</nf:description>
+			<nf:type>generic_software32</nf:type>
+		</nf:register>
+		<nf:register>
+		  <nf:name>mem_rdata_ver_high</nf:name>
+			<nf:description>Upper 32 bits of D-MEM Read Data</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+        	<nf:register>
+		  <nf:name>mem_rdata_ver_low</nf:name>
+			<nf:description>Lower 32 bits of D-MEM Read Data</nf:description>
+			<nf:type>generic_hardware32</nf:type>
+		</nf:register>
+	</nf:registers>
+</nf:module>
+

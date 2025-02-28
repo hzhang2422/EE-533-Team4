@@ -37,9 +37,9 @@ module if_id (
    input 										reset
 );
 
-	always @ (posedge clk, negedge reset)
+	always @ (posedge clk)
 	begin
-		if (reset == 1'b0)
+		if (reset == 1'b1)
 		begin
 			memwrite = 1'b0;
 			regwrite = 1'b0;

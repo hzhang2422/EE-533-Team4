@@ -20,18 +20,18 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module pc (
-   input             start,
    output reg [8:0]  pc_out,
+
    input clk,
    input reset
 );
 
-always @ (posedge clk, negedge reset)
+always @ (posedge clk)
 begin
-    if (reset == 1'b0)
+    if (reset == 1'b1)
         pc_out <= 0;
-    else if (start == 1'b0)
-        pc_out <= 0;
+    else if (pc_out == 9'b111111111)
+        pc_out <= 9'b111111111;
     else
         pc_out <= pc_out + 1;
 end

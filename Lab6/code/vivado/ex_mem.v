@@ -24,10 +24,10 @@ module ex_mem (
    input 										reset
 );
 
-	always @(posedge clk, negedge reset)
+	always @(posedge clk)
 	
 		begin
-		if(reset == 1'b0)
+		if(reset == 1'b1)
 			begin
 				memwrite_out <= 1'b0;
 				regwrite_out <= 1'b0;

@@ -7,48 +7,19 @@
 
 module pipeline 
 	(
-	// To preload I-MEM
-	input [8:0]									imem_waddr_pre,
-	input [31:0]								instr_write_pre,
-	input											instr_we_pre,
+		// To verify D-MEM result 
+		input [7:0]									mem_raddr_ver,
+		output [63:0]								mem_rdata_ver,	
 	
-	// To preload D-MEM
-	input [7:0]									dmem_waddr_pre,
-	input [63:0]								dmem_wdata_pre,
-	input											dmem_we_pre,
-
-	// To verify RegFile result
-	input [`PIPE_REG_ADDR_WIDTH - 1:0]	regfile_raddr_ver,
-	output [63:0]								regfile_rdata_ver,
-
-	// To verify D-MEM result 
-	input [7:0]									mem_raddr_ver,
-	output [63:0]								mem_rdata_ver,	
-
-	// Status signals
-	input 										start,	// Start pipeline signal
-
-	// Outpu test
-	
-	input 										clk,
-	input 										reset
+	   // misc	
+		input 										clk,
+		input 										reset
 );
-
-	// I-MEM
-	wire [8:0]									imem_waddr;
-	wire [31:0]									instr_write;
-	wire 											instr_we;
 
 	// D-MEM
 	wire [7:0]									dmem_waddr;
 	wire [63:0]									dmem_wdata;
 	wire 											dmem_we;
-
-	// Verification(RegFile)
-	wire [`PIPE_REG_ADDR_WIDTH - 1:0]	regfile_raddr;
-	wire [63:0]									regfile_rdata;
-
-	// Verification(D-MEM)
 	wire [7:0]									dmem_raddr;
 	wire [63:0]									dmem_rdata;
 
@@ -84,38 +55,20 @@ module pipeline
 	wire [63:0]									wb_memdata;
 	wire [63:0]									wb_regdata;
 	
-	// Preload I-MEM
-	assign imem_waddr = !start ? imem_waddr_pre : 9'b0;
-	assign instr_write = !start ? instr_write_pre : 32'b0;
-	assign instr_we = !start ? instr_we_pre : 1'b0;
-
-	// Preload D-MEM (code is in D-MEM block)
-	
-	// Verification(RegFile)
-	assign regfile_raddr = !start ? regfile_raddr_ver : 3'b0;
-	assign regfile_rdata_ver = !start ? regfile_rdata : 64'b0;
-
 	// Verification(D-MEM)
-	assign mem_rdata_ver = !start ? dmem_rdata : 64'b0;
-
-	// Output test
+	assign mem_rdata_ver = mem_raddr_ver === 8'bxxxxxxxx ? 64'b0 : dmem_rdata;	// If input mem_raddr_ver is unknown
 	
 	pc PC (
 		.clk										(clk),
 		.reset									(reset),
-		.start									(start),
 
 		.pc_out									(pc_out)
 	);
 
 	instr_mem I_MEM(
-		.addra									(imem_waddr),
-		.addrb									(pc_out),
-		.clka										(clk),
-		.clkb										(clk),
-		.dina										(instr_write),
-		.doutb									(if_instr),
-		.wea										(instr_we)
+		.addr										(pc_out),
+		.clk										(clk),
+		.dout										(if_instr)
 	);	
 
 	if_id IF_ID (
@@ -140,10 +93,6 @@ module pipeline
 		
 		.rsdata_out		(id_rsdata), 
 		.rtdata_out		(id_rtdata),
-
-		// To verify RegFile result
-		.regfile_raddr	(regfile_raddr),
-		.regfile_rdata	(regfile_rdata),
 		
 		.clk				(clk),
 		.reset			(reset)
@@ -185,10 +134,10 @@ module pipeline
 	);
 	
 	// D-MEM
-	assign dmem_waddr = !start ? dmem_waddr_pre : mem_rsdata;
-	assign dmem_wdata = !start ? dmem_wdata_pre : mem_rtdata;
-	assign dmem_we = !start ? dmem_we_pre : mem_memwrite;
-	assign dmem_raddr = !start ? mem_raddr_ver : mem_rsdata;
+	assign dmem_waddr = mem_rsdata;
+	assign dmem_wdata = mem_rtdata;
+	assign dmem_we = mem_memwrite;
+	assign dmem_raddr = 	mem_raddr_ver === 8'bxxxxxxxx ? mem_rsdata : mem_raddr_ver;	// If input mem_raddr_ver is unknown
 
    data_mem D_MEM(
 		.addra				(dmem_waddr),
