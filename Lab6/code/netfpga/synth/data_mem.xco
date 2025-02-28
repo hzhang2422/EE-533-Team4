@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version K.31
-# Date: Sun Feb 23 08:42:38 2025
+# Date: Fri Feb 28 12:43:25 2025
 #
 ##############################################################
 #
@@ -35,14 +35,15 @@ SET vhdlsim = True
 SELECT Dual_Port_Block_Memory family Xilinx,_Inc. 6.3
 # END Select
 # BEGIN Parameters
-CSET component_name=instr_mem
+CSET coefficient_file=/root/netfpga/projects/lab6/synth/dmem_init.coe
+CSET component_name=data_mem
 CSET configuration_port_a=Write_Only
 CSET configuration_port_b=Read_Only
-CSET depth_a=512
-CSET depth_b=512
+CSET depth_a=256
+CSET depth_b=256
 CSET disable_warning_messages=true
 CSET global_init_value=0
-CSET load_init_file=false
+CSET load_init_file=true
 CSET port_a_active_clock_edge=Rising_Edge_Triggered
 CSET port_a_additional_output_pipe_stages=0
 CSET port_a_enable_pin=false
@@ -65,11 +66,11 @@ CSET port_b_register_inputs=false
 CSET port_b_write_enable_polarity=Active_High
 CSET primitive_selection=Optimize_For_Area
 CSET select_primitive=16kx1
-CSET width_a=32
-CSET width_b=32
-CSET write_mode_port_a=Read_After_Write
+CSET width_a=64
+CSET width_b=64
+CSET write_mode_port_a=No_Read_On_Write
 CSET write_mode_port_b=Read_After_Write
 # END Parameters
 GENERATE
-# CRC: 85d83131
+# CRC: 6ec859ab
 

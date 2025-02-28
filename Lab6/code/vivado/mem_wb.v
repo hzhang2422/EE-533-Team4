@@ -19,11 +19,11 @@ module mem_wb (
 );
 
 	// Because DMEM is synchronous which has already taken 1 clk
-	assign memdata_out = reset ? memdata_in : 64'h0000000000000000;
+	assign memdata_out = !reset ? memdata_in : 64'h0000000000000000;
 	
-	always @(posedge clk, negedge reset)
+	always @(posedge clk)
 	begin
-		if(reset == 1'b0)
+		if(reset == 1'b1)
 			begin
 				regwrite_out <= 1'b0;
 				rd_out <= 3'b000;
