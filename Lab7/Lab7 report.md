@@ -8,8 +8,8 @@ Members: Yijie Zhou, Jiahe Wu, Haoyang Zhang, Bohan Fang
 * [High-level design of the datapath](#1)
 * [Instruction Set Architecture](#2)
 * [Bubble sort in C and Assembly](#3)
-* [Generated Verilog](#4)
-* [Testbench and Waveform](#5)
+* [MACHINE CODE](#4)
+* [NetFPGA](#5)
 
 
 <h4 id="1"> High-level design of the datapath </h4>
@@ -40,7 +40,7 @@ Bubble sort in Assembly
 
 ![bs_a3](./img/bs_a3.png)
 
-
+<h4 id="4"> MACHINE CODE </h4>
 
 === MACHINE CODE IN BINARY FORMAT (0s and 1s) ===
 
@@ -191,5 +191,6 @@ Bubble sort in Assembly
 00000000000000001000000001100111 # Instruction 73
 
 
+<h4 id="5"> NetFPGA </h4>
 
 ![netfpga](./img/netfpga.png)
