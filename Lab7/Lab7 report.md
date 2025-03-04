@@ -20,181 +20,161 @@ Members: Yijie Zhou, Jiahe Wu, Haoyang Zhang, Bohan Fang
 
 <h4 id="2"> Instruction Set Architecture </h4>
 
-![ISA](./img/ISA.png)
+![1](./img/1.png)
+
+![2](./img/2.png)
+
+![3](./img/3.png)
+
+![4](./img/4.png)
+
+
 
 
 <h4 id="3"> Bubble sort in C and Assembly </h3>
 
 
-Bubble sort in C
+**Bubble sort in C**
+
+![5](./img/5.png)
+
+
+
+**Bubble sort in Assembly**
+
+![6](./img/6.png)
+
+![7](./img/7.png)
+
+
+
+We use the following **python script** to extract the machine code generated.
+
+![8](./img/8.png)
+
+
+
+**Machine code**
+
+![9](./img/9.png)
+
+![10](./img/10.png)
+
+
+
+**The transcript of a sequence of commands typed to the interface**
+
+- SW/HW interface in pipeline module
+
+  - Verilog module
+
+    ```
+    	// pipeline_netfpga.v
+    
+    	// Software registers
+    	wire [7:0]									mem_raddr_ver;
+    
+       	// Hardware registers
+      	wire [63:0]								   	mem_rdata_ver;
+    	wire [31:0]								   	mem_rdata_ver_high;	
+       	wire [31:0]								   	mem_rdata_ver_low;
+    
+    	// Verification(D-MEM)
+    	assign mem_rdata_ver = dmem_rdata;
+       	assign mem_rdata_ver_low = mem_rdata_ver[63:32];
+       	assign mem_rdata_ver_high = mem_rdata_ver[31:0];
+    
+    	// ......
+    
+    	generic_regs
+       #( 
+          .UDP_REG_SRC_WIDTH   (UDP_REG_SRC_WIDTH),
+          .TAG                 (`PIPELINE_BLOCK_ADDR),          // Tag -- eg. MODULE_TAG
+          .REG_ADDR_WIDTH      (`PIPELINE_REG_ADDR_WIDTH),     // Width of block addresses -- eg. MODULE_REG_ADDR_WIDTH
+          .NUM_COUNTERS        (0),                 // Number of counters
+          .NUM_SOFTWARE_REGS   (1),                 // Number of sw regs
+          .NUM_HARDWARE_REGS   (2)                  // Number of hw regs
+       ) module_regs (
+          .reg_req_in       (reg_req_in),
+          .reg_ack_in       (reg_ack_in),
+          .reg_rd_wr_L_in   (reg_rd_wr_L_in),
+          .reg_addr_in      (reg_addr_in),
+          .reg_data_in      (reg_data_in),
+          .reg_src_in       (reg_src_in),
+    
+          .reg_req_out      (reg_req_out),
+          .reg_ack_out      (reg_ack_out),
+          .reg_rd_wr_L_out  (reg_rd_wr_L_out),
+          .reg_addr_out     (reg_addr_out),
+          .reg_data_out     (reg_data_out),
+          .reg_src_out      (reg_src_out),
+    
+          // --- counters interface
+          .counter_updates  (),
+          .counter_decrement(),
+    
+          // --- SW regs interface
+          .software_regs    (mem_raddr_ver),
+    
+          // --- HW regs interface
+          .hardware_regs    ({mem_rdata_ver_high, mem_rdata_ver_low}),
+    
+          .clk              (clk),
+          .reset            (reset)
+        );
+    ```
+
+    
+
+- **Registers in pipeline.xml**
+
+  ```
+  <?xml version="1.0" encoding="UTF-8"?>
+  <nf:module xmlns:nf="http://www.NetFPGA.org/NF2_register_system" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.NetFPGA.org/NF2_register_system NF2_register_system.xsd ">
+  	<nf:name>pipeline</nf:name>
+  	<nf:prefix>pipeline</nf:prefix>
+  	<nf:location>udp</nf:location>
+  	<nf:description>Registers for PIPELINE</nf:description>
+  	<nf:blocksize>64</nf:blocksize>
+  	<nf:registers>
+  		<nf:register>
+  		  <nf:name>mem_raddr_ver</nf:name>
+  			<nf:description>D-MEM Read Address</nf:description>
+  			<nf:type>generic_software32</nf:type>
+  		</nf:register>
+  		<nf:register>
+  		  <nf:name>mem_rdata_ver_high</nf:name>
+  			<nf:description>Upper 32 bits of D-MEM Read Data</nf:description>
+  			<nf:type>generic_hardware32</nf:type>
+  		</nf:register>
+          	<nf:register>
+  		  <nf:name>mem_rdata_ver_low</nf:name>
+  			<nf:description>Lower 32 bits of D-MEM Read Data</nf:description>
+  			<nf:type>generic_hardware32</nf:type>
+  		</nf:register>
+  	</nf:registers>
+  </nf:module>
+  ```
+
+  
+
+**The internal memory dump that shows the array data before and after sort program execution**
+
+The last line is swapped to -455: 
+
+![11](./img/11.png)
+
+![12](./img/12.png)
 
-![bs_c](./img/bs_c.png)
 
-Bubble sort in Assembly
-
-![bs_a](./img/bs_a.png)
-
-![bs_a1](./img/bs_a1.png)
-
-![bs_a2](./img/bs_a2.png)
-
-![bs_a3](./img/bs_a3.png)
-
-<h4 id="4"> MACHINE CODE </h4>
-
-=== MACHINE CODE IN BINARY FORMAT (0s and 1s) ===
-
-11111101110000010000000100010011 # Instruction 1
-
-00000010100000010010011000100011 # Instruction 2
-
-00000011000000010000010000010011 # Instruction 3
-
-00000000000000000111011110010111 # Instruction 4
-
-00000000000001111010010110000011 # Instruction 5
-
-00000000010001111010011000000011 # Instruction 6
-
-00000000100001111010011010000011 # Instruction 7
-
-00000000110001111010011100000011 # Instruction 8
-
-00000001000001111010011110000011 # Instruction 9
-
-11111100101101000010100000100011 # Instruction 10
-
-11111100110001000010101000100011 # Instruction 11
-
-11111100110101000010110000100011 # Instruction 12
-
-11111100111001000010111000100011 # Instruction 13
-
-11111110111101000010000000100011 # Instruction 14
-
-11111110000001000010101000100011 # Instruction 15
-
-00000001100000000000000001101111 # Instruction 16
-
-11111110000001000010100000100011 # Instruction 17
-
-00000010000000000000000001101111 # Instruction 18
-
-11111110100001000010011110000011 # Instruction 19
-
-00000000001001111001011110010011 # Instruction 20
-
-11111111000001111000011110010011 # Instruction 21
-
-00000000111101000000011110110011 # Instruction 22
-
-11111110000001111010011100000011 # Instruction 23
-
-11111110100001000010011110000011 # Instruction 24
-
-00000000000101111000011110010011 # Instruction 25
-
-00000000001001111001011110010011 # Instruction 26
-
-11111111000001111000011110010011 # Instruction 27
-
-00000000111101000000011110110011 # Instruction 28
-
-11111110000001111010011110000011 # Instruction 29
-
-00000000111101110101101001100011 # Instruction 30
-
-11111110100001000010011110000011 # Instruction 31
-
-00000000001001111001011110010011 # Instruction 32
-
-11111111000001111000011110010011 # Instruction 33
-
-00000000111101000000011110110011 # Instruction 34
-
-11111110000001111010011110000011 # Instruction 35
-
-11111110111101000010011000100011 # Instruction 36
-
-11111110100001000010011110000011 # Instruction 37
-
-00000000000101111000011110010011 # Instruction 38
-
-00000000001001111001011110010011 # Instruction 39
-
-11111111000001111000011110010011 # Instruction 40
-
-00000000111101000000011110110011 # Instruction 41
-
-11111110000001111010011100000011 # Instruction 42
-
-11111110100001000010011110000011 # Instruction 43
-
-00000000001001111001011110010011 # Instruction 44
-
-11111111000001111000011110010011 # Instruction 45
-
-00000000111101000000011110110011 # Instruction 46
-
-11111110111001111010000000100011 # Instruction 47
-
-11111110100001000010011110000011 # Instruction 48
-
-00000000000101111000011110010011 # Instruction 49
-
-00000000001001111001011110010011 # Instruction 50
-
-11111111000001111000011110010011 # Instruction 51
-
-00000000111101000000011110110011 # Instruction 52
-
-11111110110001000010011100000011 # Instruction 53
-
-11111110111001111010000000100011 # Instruction 54
-
-11111110100001000010011110000011 # Instruction 55
-
-00000000000101111000011110010011 # Instruction 56
-
-11111110111101000010100000100011 # Instruction 57
-
-00000000010000000000011100010011 # Instruction 58
-
-11111110110001000010011110000011 # Instruction 59
-
-01000000111101110000011110110011 # Instruction 60
-
-11111110100001000010011100000011 # Instruction 61
-
-11111010111101110100101011100011 # Instruction 62
-
-11111110110001000010011110000011 # Instruction 63
-
-00000000000101111000011110010011 # Instruction 64
-
-11111110111101000010101000100011 # Instruction 65
-
-11111110110001000010011100000011 # Instruction 66
-
-00000000001100000000011110010011 # Instruction 67
-
-11111010111101110100110011100011 # Instruction 68
-
-00000000000000000000000000010011 # Instruction 69
-
-00000000000000000000000000010011 # Instruction 70
-
-00000010110000010010010000000011 # Instruction 71
-
-00000011000000010000000100010011 # Instruction 72
-
-00000000000000001000000001100111 # Instruction 73
 
 
 <h4 id="5"> NetFPGA </h4>
 
-![netfpga](./img/netfpga.png)
+![13](./img/13.png)
 
 
 
-![git_log](./img/git_log.png)
+Commit log
+
+![14](./img/14.png)
