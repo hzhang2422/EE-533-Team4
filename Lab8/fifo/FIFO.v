@@ -128,7 +128,7 @@ module lab8_fifo(
             EX: begin
                 p_en = ~p_di;
                 addrb = proc_addr_in; 
-                enb = proc_memEN; 
+                enb = proc_memEn; 
                 web = proc_web;
                 dinb = {8'b0, proc_data_in};
                 proc_data_out = doutb[63:0];

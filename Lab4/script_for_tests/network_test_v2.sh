@@ -15,8 +15,8 @@ usage() {
 }
 
 # Default values
-TEAM_NUM=4
-PASSWORD="REDACTED"
+TEAM_NUM=   #user
+PASSWORD="" #psw
 BITFILE_TYPE="nic"
 PACKET_SIZE=512
 TEST_DURATION=30
