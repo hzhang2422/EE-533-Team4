@@ -1,4 +1,4 @@
-module imm(
+module imm_64(
     input [31: 0] instr,
     input [2: 0] extOP,
 

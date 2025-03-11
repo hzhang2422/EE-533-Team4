@@ -1,4 +1,4 @@
-module data_mem(
+module data_mem_64(
     input clk, rst, 
     input [1: 0] write_mem, 
     input [2: 0] read_mem,  
