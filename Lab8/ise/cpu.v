@@ -295,7 +295,7 @@ mux_3 MUX_EX_B(
 
 add_pc ADD_PC(
     .pc(ex_pc),
-    .imm64(ex_imm32),
+    .imm64(ex_imm64),
     .rs1Data(ex_true_rs1Data),
 
     .pcImm(ex_pcImm),
