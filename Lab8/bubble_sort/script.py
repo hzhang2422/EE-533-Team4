@@ -21,7 +21,7 @@ def generate_verilog(mem_file, asm_file):
                 print(f"Invalid instruction format || {line}")
 
 
-asm_file = 'sort_machine.s'
+asm_file = 'bubble.s'
 mem_file = 'instruction.text'
 
 
