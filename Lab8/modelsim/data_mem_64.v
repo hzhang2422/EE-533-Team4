@@ -13,7 +13,7 @@ wire [7:0] memindex;
 
 assign memindex = address>>2;
 
-always @(*) begin
+always @(read_mem or memindex or data[memindex]) begin
     case (read_mem[1:0])
       2'b00: begin
         out_mem = 64'b0;

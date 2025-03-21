@@ -1,5 +1,6 @@
 module ex_me(
     input clk, rst, flush,
+    input pipeline_en,
 
     input ex_aluOut_WB_memOut,
     input ex_writeReg,
@@ -30,19 +31,19 @@ module ex_me(
 
 always @(posedge clk) begin
     if(rst || flush) begin
-        me_aluOut_WB_memOut = 1'b0;
-        me_writeReg = 1'b1;
-        me_writeMem = 2'b00;
-        me_readMem = 3'b000;
-        me_pcImm_NEXTPC_rs1Imm = 2'b00;
-        me_conditionBranch = 1'b0;
-        me_pcImm = 32'd0;
-        me_rs1Imm = 32'd0;
-        me_outAlu = 32'd0;
-        me_rs2Data = 32'd0;
-        me_rd = 5'd0;
-        me_rs2 = 5'd0;
-    end else begin
+        me_aluOut_WB_memOut <= 1'b0;
+        me_writeReg <= 1'b1;
+        me_writeMem <= 2'b00;
+        me_readMem <= 3'b000;
+        me_pcImm_NEXTPC_rs1Imm <= 2'b00;
+        me_conditionBranch <= 1'b0;
+        me_pcImm <= 32'd0;
+        me_rs1Imm <= 32'd0;
+        me_outAlu <= 32'd0;
+        me_rs2Data <= 32'd0;
+        me_rd <= 5'd0;
+        me_rs2 <= 5'd0;
+    end else if(pipeline_en) begin
         me_aluOut_WB_memOut <= ex_aluOut_WB_memOut;
         me_writeReg <= ex_writeReg;
         me_writeMem <= ex_writeMem;

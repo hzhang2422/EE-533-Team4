@@ -7,7 +7,7 @@ module instruction_mem (
 
 reg [31: 0] inst_mem[127: 0];
 
-always @(*) begin
+always @(pc) begin
     instruction = inst_mem[pc >> 2];
 end
 

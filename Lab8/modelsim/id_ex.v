@@ -1,5 +1,6 @@
 module id_ex(
     input clk, rst, pause, flush,
+    input pipeline_en,
 
     input [4: 0] id_aluc,
     input id_aluOut_WB_memOut,
@@ -40,22 +41,22 @@ module id_ex(
 
 always @(posedge clk) begin
     if(rst || pause || flush)begin
-        ex_aluc = 5'b00000;
-        ex_aluOut_WB_memOut = 1'b0;
-        ex_rs1Data_EX_PC = 1'b0;
-        ex_rs2Data_EX_imm64_4 = 2'b01;
-        ex_writeReg = 1'b1;
-        ex_writeMem = 2'b00;
-        ex_readMem = 3'b000;
-        ex_pcImm_NEXTPC_rs1Imm = 2'b00;
-        ex_pc = 64'h0;
-        ex_rs1Data = 64'd0;
-        ex_rs2Data = 64'd0;
-        ex_imm64 = 64'd0;
-        ex_rd = 5'd0;
-        ex_rs1 = 5'd0;
-        ex_rs2 = 5'd0;
-    end else begin
+        ex_aluc <= 5'b00000;
+        ex_aluOut_WB_memOut <= 1'b0;
+        ex_rs1Data_EX_PC <= 1'b0;
+        ex_rs2Data_EX_imm64_4 <= 2'b01;
+        ex_writeReg <= 1'b1;
+        ex_writeMem <= 2'b00;
+        ex_readMem <= 3'b000;
+        ex_pcImm_NEXTPC_rs1Imm <= 2'b00;
+        ex_pc <= 64'h0;
+        ex_rs1Data <= 64'd0;
+        ex_rs2Data <= 64'd0;
+        ex_imm64 <= 64'd0;
+        ex_rd <= 5'd0;
+        ex_rs1 <= 5'd0;
+        ex_rs2 <= 5'd0;
+    end else if(pipeline_en) begin
         ex_aluc <= id_aluc;
         ex_aluOut_WB_memOut <= id_aluOut_WB_memOut;
         ex_rs1Data_EX_PC <= id_rs1Data_EX_PC;
