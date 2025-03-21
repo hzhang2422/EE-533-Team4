@@ -39,6 +39,13 @@ always @(read_mem or memindex or data[memindex]) begin
 end
 
 always @(posedge clk) begin
+  if(rst) begin
+    data[73] <= 64'h0000_0000_0000_0008; //8
+    data[74] <= 64'h0000_0000_0000_000A; //10
+    data[75] <= 64'hFFFF_FFFF_FFFF_FFFE; //-2
+    data[76] <= 64'h0000_0000_0000_0006; //6
+    data[77] <= 64'h0000_0000_0000_0004; //4
+  end else begin
       case (write_mem)
         2'b01: begin
         data[memindex] <= write_data;
@@ -53,14 +60,7 @@ always @(posedge clk) begin
 
         end
       endcase
-end
-
-initial begin
-	  data[73]=64'h0000_0000_0000_0008; //8
-    data[74]=64'h0000_0000_0000_000A; //10
-    data[75]=64'hFFFF_FFFF_FFFF_FFFE; //-2
-    data[76]=64'h0000_0000_0000_0006; //6
-    data[77]=64'h0000_0000_0000_0004; //4
+  end
 end
 
 endmodule
