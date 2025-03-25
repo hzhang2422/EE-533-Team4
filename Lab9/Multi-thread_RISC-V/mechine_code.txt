@@ -1,0 +1,157 @@
+// main:
+0xFF810113      // addi sp, sp, -4
+0x00112023      // sw ra, 0(sp)
+
+// la a0, group1 (pc-relative addressing, assuming group1 at address 0x1000)
+0x00000517      // auipc a0, 0x0
+0x00050513      // addi a0, a0, immoffset
+
+0x00000097      // auipc ra, 0x0
+0x000080E7      // jalr ra, offset(ra) to load_group1
+
+0x00000097      // auipc ra, 0x0
+0x000080E7      // jalr ra, offset(ra) to sort_group1
+
+// la a0, group2 (pc-relative addressing, assuming group2 at address 0x100C)
+0x00000517      // auipc a0, 0x0
+0x00050513      // addi a0, a0, immoffset
+
+0x00000097      // auipc ra, 0x0
+0x000080E7      // jalr ra, offset(ra) to load_group2
+
+0x00000097      // auipc ra, 0x0
+0x000080E7      // jalr ra, offset(ra) to sort_group2
+
+// la a0, group3 (pc-relative addressing, assuming group3 at address 0x1018)
+0x00000517      // auipc a0, 0x0
+0x00050513      // addi a0, a0, immoffset
+
+0x00000097      // auipc ra, 0x0
+0x000080E7      // jalr ra, offset(ra) to load_group3
+
+0x00000097      // auipc ra, 0x0
+0x000080E7      // jalr ra, offset(ra) to sort_group3
+
+// la a0, group4 (pc-relative addressing, assuming group4 at address 0x1024)
+0x00000517      // auipc a0, 0x0
+0x00050513      // addi a0, a0, immoffset
+
+0x00000097      // auipc ra, 0x0
+0x000080E7      // jalr ra, offset(ra) to load_group4
+
+0x00000097      // auipc ra, 0x0
+0x000080E7      // jalr ra, offset(ra) to sort_group4
+
+0x00012083      // lw ra, 0(sp)
+0x00410113      // addi sp, sp, 4
+
+0x00000513      // li a0, 0
+0x00008067      // ret
+
+// load_group1:
+0x00052283      // lw t0, 0(a0)
+0x00452303      // lw t1, 4(a0)
+0x00852383      // lw t2, 8(a0)
+0x00008067      // ret
+
+// sort_group1:
+0x0062D863      // bge t1, t0, check1_t0_t2 (+16 bytes)
+0x00028E13      // mv t3, t0
+0x00030293      // mv t0, t1
+0x01C30313      // mv t1, t3
+
+// check1_t0_t2:
+0x0063D863      // bge t2, t0, check1_t1_t2 (+16 bytes)
+0x00028E13      // mv t3, t0
+0x00038293      // mv t0, t2
+0x01C38383      // mv t2, t3
+
+// check1_t1_t2:
+0x0073D863      // bge t2, t1, sort1_done (+16 bytes)
+0x00030E13      // mv t3, t1
+0x00038313      // mv t1, t2
+0x01C38383      // mv t2, t3
+
+// sort1_done:
+0x00008067      // ret
+
+// load_group2:
+0x00052483      // lw s1, 0(a0)
+0x00452903      // lw s2, 4(a0)
+0x00852983      // lw s3, 8(a0)
+0x00008067      // ret
+
+// sort_group2:
+0x0124D863      // bge s2, s1, check2_s1_s3 (+16 bytes)
+0x00048E13      // mv t3, s1
+0x00090483      // mv s1, s2
+0x01C90913      // mv s2, t3
+
+// check2_s1_s3:
+0x0134D863      // bge s3, s1, check2_s2_s3 (+16 bytes)
+0x00048E13      // mv t3, s1
+0x00098483      // mv s1, s3
+0x01C98983      // mv s3, t3
+
+// check2_s2_s3:
+0x0134D863      // bge s3, s2, sort2_done (+16 bytes)
+0x00090E13      // mv t3, s2
+0x00098913      // mv s2, s3
+0x01C98983      // mv s3, t3
+
+// sort2_done:
+0x00008067      // ret
+
+// load_group3:
+0x00052583      // lw a1, 0(a0)
+0x00452603      // lw a2, 4(a0)
+0x00852683      // lw a3, 8(a0)
+0x00008067      // ret
+
+// sort_group3:
+0x00C5D863      // bge a2, a1, check3_a1_a3 (+16 bytes)
+0x00058E13      // mv t3, a1
+0x00060583      // mv a1, a2
+0x01C60613      // mv a2, t3
+
+// check3_a1_a3:
+0x00D5D863      // bge a3, a1, check3_a2_a3 (+16 bytes)
+0x00058E13      // mv t3, a1
+0x00068583      // mv a1, a3
+0x01C68683      // mv a3, t3
+
+// check3_a2_a3:
+0x00D65863      // bge a3, a2, sort3_done (+16 bytes)
+0x00060E13      // mv t3, a2
+0x00068613      // mv a2, a3
+0x01C68683      // mv a3, t3
+
+// sort3_done:
+0x00008067      // ret
+
+// load_group4:
+0x00052A03      // lw s4, 0(a0)
+0x00452A83      // lw s5, 4(a0)
+0x00852B03      // lw s6, 8(a0)
+0x00008067      // ret
+
+// sort_group4:
+0x015A5863      // bge s5, s4, check4_s4_s6 (+16 bytes)
+0x000A0E13      // mv t3, s4
+0x000A8A03      // mv s4, s5
+0x01CA8A83      // mv s5, t3
+
+// check4_s4_s6:
+0x016A5863      // bge s6, s4, check4_s5_s6 (+16 bytes)
+0x000A0E13      // mv t3, s4
+0x000B0A03      // mv s4, s6
+0x01CB0B03      // mv s6, t3
+
+// check4_s5_s6:
+0x016AD863      // bge s6, s5, sort4_done (+16 bytes)
+0x000A8E13      // mv t3, s5
+0x000B0A83      // mv s5, s6
+0x01CB0B03      // mv s6, t3
+
+// sort4_done:
+0x00008067      // ret
