@@ -1,0 +1,4 @@
+hidden_weights_scale: 0.044703833758831024
+hidden_bias_scale: 0.004380369558930397
+output_weights_scale: 0.04252065718173981
+output_bias_scale: 0.0028870904352515936
